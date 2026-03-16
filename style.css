@@ -50,3 +50,12 @@ p {
     transform: scale(1.1); /* Slight "pop" on hover/touch */
     text-shadow: 0px 0px 15px rgba(255, 69, 0, 0.7); /* Ember glow effect */
 }
+
+/* --- Logo Styling --- */
+.main-logo {
+    width: 250px; /* Adjust this number to get the size exactly how you want it */
+    max-width: 80%; /* Ensures it doesn't bleed off the screen on small phones */
+    height: auto;
+    margin-bottom: 20px; /* Space between logo and text */
+    filter: drop-shadow(0px 0px 10px rgba(255, 204, 153, 0.2)); /* Subtle matching glow */
+}
