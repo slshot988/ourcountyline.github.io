@@ -204,3 +204,19 @@ p {
     transform: scale(1.03);
     box-shadow: 0px 8px 20px rgba(255, 204, 153, 0.2);
 }
+
+/* --- Footer Styling --- */
+footer {
+    margin-top: 60px;
+    padding-bottom: 30px;
+    width: 100%;
+    border-top: 1px solid rgba(212, 195, 161, 0.1);
+}
+
+.copyright-text {
+    font-size: 0.7rem;
+    color: #d4c3a1;
+    opacity: 0.4; /* Very subtle fade */
+    letter-spacing: 1px;
+    margin-top: 20px;
+}
