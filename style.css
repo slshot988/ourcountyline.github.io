@@ -59,3 +59,94 @@ p {
     margin-bottom: 20px; /* Space between logo and text */
     filter: drop-shadow(0px 0px 10px rgba(255, 204, 153, 0.2)); /* Subtle matching glow */
 }
+
+/* --- Streaming Buttons --- */
+.spotify-btn, .pre-save-btn {
+    display: inline-block;
+    background-color: #1DB954; /* Spotify Green */
+    color: #fff;
+    padding: 12px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    margin-top: 15px;
+    transition: all 0.3s ease;
+    border: none;
+}
+
+.spotify-btn:hover {
+    background-color: #1ed760;
+    box-shadow: 0px 0px 15px rgba(29, 185, 84, 0.4);
+    transform: translateY(-2px);
+}
+
+.pre-save-btn {
+    background-color: transparent;
+    border: 1px solid #ffcc99; /* Ember Gold */
+    color: #ffcc99;
+}
+
+.pre-save-btn:hover {
+    background-color: #ffcc99;
+    color: #0d0c0a;
+}
+
+.track-title {
+    font-family: 'Georgia', serif;
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+    color: #d4c3a1;
+}
+
+/* --- Streaming Buttons and Cover Art --- */
+.track-cover {
+    width: 100%; /* Responsive to column width */
+    max-width: 250px; /* Limits size on large screens */
+    height: auto;
+    aspect-ratio: 1 / 1; /* Forces 1:1 ratio */
+    border-radius: 4px; /* Subtle curve on corners */
+    border: 1px solid rgba(212, 195, 161, 0.2); /* Faint gold border */
+    margin-bottom: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Adds depth */
+}
+
+.spotify-btn, .pre-save-btn {
+    display: inline-block;
+    background-color: #1DB954; /* Spotify Green */
+    color: #fff;
+    padding: 12px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    margin-top: 15px;
+    transition: all 0.3s ease;
+    border: none;
+}
+
+.spotify-btn:hover {
+    background-color: #1ed760;
+    box-shadow: 0px 0px 15px rgba(29, 185, 84, 0.4);
+    transform: translateY(-2px);
+}
+
+.pre-save-btn {
+    background-color: transparent;
+    border: 1px solid #ffcc99; /* Ember Gold */
+    color: #ffcc99;
+}
+
+.pre-save-btn:hover {
+    background-color: #ffcc99;
+    color: #0d0c0a;
+}
+
+.track-title {
+    font-family: 'Georgia', serif;
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+    color: #d4c3a1;
+}
