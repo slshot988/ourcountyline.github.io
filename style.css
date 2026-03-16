@@ -24,3 +24,29 @@ p {
     font-size: 0.9rem;
     opacity: 0.7;
 }
+/* --- Social Media Icon Styles (Mobile Optimized) --- */
+.social-icons {
+    margin: 30px 0; /* Creates breathing room between the title and the links */
+    display: flex; /* This ensures they stack neatly and space evenly */
+    justify-content: center;
+    flex-wrap: wrap; /* Prevents them from crowding on very small screens */
+}
+
+.social-icons a {
+    color: #ffcc99; /* --- NEW COLOR: Warmer, Ember-Gold to pop against dark charcoal --- */
+    font-size: 2.5rem; /* --- NEW SIZE: Increased from ~1.8rem to 2.5rem (approx. 40px) --- */
+    margin: 10px 20px; /* --- NEW SPACING: Added 10px vertically and 20px horizontally for tap target separation --- */
+    text-decoration: none;
+    transition: all 0.3s ease; /* Smooth fade for the hover effect */
+    opacity: 0.8; /* Keeps them subtle until touched */
+    display: inline-block; /* Essential for padding to work for touch targets */
+    padding: 10px; /* --- NEW ADDITION: This creates an "Invisible Buffer" making the whole area clickable, even the space between icons --- */
+}
+
+.social-icons a:hover,
+.social-icons a:active { /* :active is critical for mobile touch feedback */
+    opacity: 1;
+    color: #fff; /* Brighter white pop on interaction */
+    transform: scale(1.1); /* Slight "pop" on hover/touch */
+    text-shadow: 0px 0px 15px rgba(255, 69, 0, 0.7); /* Ember glow effect */
+}
