@@ -115,20 +115,38 @@ p {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Adds depth */
 }
 
-.spotify-btn, .pre-save-btn {
-    display: inline-block;
-    background-color: #1DB954; /* Spotify Green */
-    color: #fff;
-    padding: 12px 20px;
-    border-radius: 25px;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 0.8rem;
-    letter-spacing: 1px;
+.platform-links {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
     margin-top: 15px;
-    transition: all 0.3s ease;
-    border: none;
 }
+
+.platform-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(212, 195, 161, 0.3);
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.platform-btn:hover {
+    transform: translateY(-3px);
+    border-color: #ffcc99;
+    box-shadow: 0px 5px 15px rgba(255, 204, 153, 0.2);
+}
+
+/* Platform Colors on Hover */
+.platform-btn.spotify:hover { color: #1DB954; }
+.platform-btn.apple:hover { color: #FC3C44; }
+.platform-btn.youtube:hover { color: #FF0000; }
 
 .spotify-btn:hover {
     background-color: #1ed760;
@@ -136,11 +154,6 @@ p {
     transform: translateY(-2px);
 }
 
-.pre-save-btn {
-    background-color: transparent;
-    border: 1px solid #ffcc99; /* Ember Gold */
-    color: #ffcc99;
-}
 
 .pre-save-btn:hover {
     background-color: #ffcc99;
