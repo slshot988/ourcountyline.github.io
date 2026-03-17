@@ -29,7 +29,7 @@ p {
 }
 /* --- Social Media Icon Styles (Mobile Optimized) --- */
 .social-icons {
-    margin: 20px 0; /* Creates breathing room between the title and the links */
+    margin: 14px 0; /* Creates breathing room between the title and the links */
     display: flex; /* This ensures they stack neatly and space evenly */
     justify-content: center;
     flex-wrap: wrap; /* Prevents them from crowding on very small screens */
@@ -220,4 +220,18 @@ footer {
     opacity: 0.4; /* Very subtle fade */
     letter-spacing: 1px;
     margin-top: 20px;
+}
+
+/* --- Mobile Specific Adjustments --- */
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 2.2rem; /* Reduced from 3.5rem to fit single line */
+        letter-spacing: 0.1rem; /* Slightly tighter for mobile fit */
+        margin-top: -5px; /* Adjusting the tuck under the logo for the smaller size */
+    }
+
+    .tagline {
+        font-size: 0.75rem; /* Shrinking the tagline slightly so it stays elegant */
+        padding: 0 10px; /* Adds a tiny bit of side-breathing room */
+    }
 }
