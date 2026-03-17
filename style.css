@@ -293,3 +293,22 @@ footer {
         padding: 0 10px; /* Adds a tiny bit of side-breathing room */
     }
 }
+
+/* --- Force images in links to be tight --- */
+.track-item a, .upcoming-item a {
+    display: block; /* Removes the "inline" ghost spacing below images */
+    line-height: 0;
+}
+
+/* --- Standardize the gap below the art --- */
+.track-cover {
+    margin-bottom: 0px; /* Reset this to zero so the container handles the gap */
+}
+
+.platform-links {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 20px !important; /* Forces BOTH columns to have an identical 20px gap */
+    width: 100%;
+}
