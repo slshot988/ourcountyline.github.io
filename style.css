@@ -225,9 +225,12 @@ footer {
 /* --- Featured Video Styling --- */
 .video-container {
     width: 100%;
-    max-width: 1000px; /* Matches your .music-grid max-width */
+    max-width: 1000px;
     margin: 40px auto;
-    padding: 0 20px;
+    padding: 0; /* --- REMOVED side padding to prevent shifting --- */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Forces everything inside to center */
 }
 
 .video-container h2 {
@@ -241,6 +244,8 @@ footer {
     position: relative;
     padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
     height: 0;
+    width: 90%; /* --- ADDED: Gives it a clean margin on mobile without shifting --- */
+    max-width: 800px; /* Keeps it from getting TOO big on desktop */
     overflow: hidden;
     border-radius: 8px;
     border: 1px solid rgba(212, 195, 161, 0.2);
