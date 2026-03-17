@@ -16,7 +16,8 @@ body {
 h1 {
     font-size: 3.5rem;
     letter-spacing: 0.2rem;
-    text-shadow: 0px 0px 15px rgba(255, 69, 0, 0.3); /* Subtle ember glow */
+    text-shadow: 0px 0px 15px rgba(255, 69, 0, 0.3);
+    margin-top: -10px; /* --- NEW: Uses a small negative margin to tuck the text under the logo glow --- */
     margin-bottom: 0;
 }
 
@@ -28,7 +29,7 @@ p {
 }
 /* --- Social Media Icon Styles (Mobile Optimized) --- */
 .social-icons {
-    margin: 30px 0; /* Creates breathing room between the title and the links */
+    margin: 20px 0; /* Creates breathing room between the title and the links */
     display: flex; /* This ensures they stack neatly and space evenly */
     justify-content: center;
     flex-wrap: wrap; /* Prevents them from crowding on very small screens */
@@ -36,8 +37,8 @@ p {
 
 .social-icons a {
     color: #ffcc99; /* --- NEW COLOR: Warmer, Ember-Gold to pop against dark charcoal --- */
-    font-size: 2.5rem; /* --- NEW SIZE: Increased from ~1.8rem to 2.5rem (approx. 40px) --- */
-    margin: 10px 20px; /* --- NEW SPACING: Added 10px vertically and 20px horizontally for tap target separation --- */
+    font-size: 2.0rem; /* --- NEW SIZE: Increased from ~1.8rem to 2.5rem (approx. 40px) --- */
+    margin: 4px 12px; /* --- NEW SPACING: Added 10px vertically and 20px horizontally for tap target separation --- */
     text-decoration: none;
     transition: all 0.3s ease; /* Smooth fade for the hover effect */
     opacity: 0.8; /* Keeps them subtle until touched */
@@ -55,11 +56,11 @@ p {
 
 /* --- Logo Styling --- */
 .main-logo {
-    width: 250px; /* Adjust this number to get the size exactly how you want it */
-    max-width: 80%; /* Ensures it doesn't bleed off the screen on small phones */
+    width: 250px; 
+    max-width: 80%; 
     height: auto;
-    margin-bottom: 20px; /* Space between logo and text */
-    filter: drop-shadow(0px 0px 10px rgba(255, 204, 153, 0.2)); /* Subtle matching glow */
+    margin-bottom: 0px; /* --- REDUCED: Changed from 20px to 0 to pull the text up --- */
+    filter: drop-shadow(0px 0px 10px rgba(255, 204, 153, 0.2)); 
 }
 
 /* --- Streaming Buttons --- */
