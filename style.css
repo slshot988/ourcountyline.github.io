@@ -29,7 +29,7 @@ p {
 }
 /* --- Social Media Icon Styles (Mobile Optimized) --- */
 .social-icons {
-    margin: 6px 0; /* Creates breathing room between the title and the links */
+    margin: 4px 0; /* Creates breathing room between the title and the links */
     display: flex; /* This ensures they stack neatly and space evenly */
     justify-content: center;
     flex-wrap: wrap; /* Prevents them from crowding on very small screens */
@@ -38,7 +38,7 @@ p {
 .social-icons a {
     color: #ffcc99; /* --- NEW COLOR: Warmer, Ember-Gold to pop against dark charcoal --- */
     font-size: 2.0rem; /* --- NEW SIZE: Increased from ~1.8rem to 2.5rem (approx. 40px) --- */
-    margin: 6px 10px; /* --- NEW SPACING: Added 10px vertically and 20px horizontally for tap target separation --- */
+    margin: 6px 8px; /* --- NEW SPACING: Added 10px vertically and 20px horizontally for tap target separation --- */
     text-decoration: none;
     transition: all 0.3s ease; /* Smooth fade for the hover effect */
     opacity: 0.8; /* Keeps them subtle until touched */
