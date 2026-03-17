@@ -37,8 +37,8 @@ p {
 
 .social-icons a {
     color: #ffcc99; /* --- NEW COLOR: Warmer, Ember-Gold to pop against dark charcoal --- */
-    font-size: 1.9rem; /* --- NEW SIZE: Increased from ~1.8rem to 2.5rem (approx. 40px) --- */
-    margin: 6px 4px; /* --- NEW SPACING: Added 10px vertically and 20px horizontally for tap target separation --- */
+    font-size: 2.0rem; /* --- NEW SIZE: Increased from ~1.8rem to 2.5rem (approx. 40px) --- */
+    margin: 10px 20px; /* --- NEW SPACING: Added 10px vertically and 20px horizontally for tap target separation --- */
     text-decoration: none;
     transition: all 0.3s ease; /* Smooth fade for the hover effect */
     opacity: 0.8; /* Keeps them subtle until touched */
@@ -228,6 +228,13 @@ footer {
         font-size: 2.2rem; /* Reduced from 3.5rem to fit single line */
         letter-spacing: 0.1rem; /* Slightly tighter for mobile fit */
         margin-top: -5px; /* Adjusting the tuck under the logo for the smaller size */
+    }
+
+    /* --- Tightening the Social Row for Mobile --- */
+    .social-icons a {
+        font-size: 1.6rem; /* Dropping from 1.9rem to 1.6rem (~25px) */
+        margin: 2px 2px;   /* Dropping horizontal margin to almost zero */
+        padding: 8px;      /* Slightly smaller "invisible buffer" to save width */
     }
 
     .tagline {
