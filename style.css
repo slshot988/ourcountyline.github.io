@@ -38,7 +38,7 @@ p {
 .social-icons a {
     color: #ffcc99; /* --- NEW COLOR: Warmer, Ember-Gold to pop against dark charcoal --- */
     font-size: 1.9rem; /* --- NEW SIZE: Increased from ~1.8rem to 2.5rem (approx. 40px) --- */
-    margin: 6px 6px; /* --- NEW SPACING: Added 10px vertically and 20px horizontally for tap target separation --- */
+    margin: 6px 4px; /* --- NEW SPACING: Added 10px vertically and 20px horizontally for tap target separation --- */
     text-decoration: none;
     transition: all 0.3s ease; /* Smooth fade for the hover effect */
     opacity: 0.8; /* Keeps them subtle until touched */
