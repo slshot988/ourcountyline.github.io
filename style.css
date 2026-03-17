@@ -294,21 +294,38 @@ footer {
     }
 }
 
-/* --- Force images in links to be tight --- */
-.track-item a, .upcoming-item a {
-    display: block; /* Removes the "inline" ghost spacing below images */
-    line-height: 0;
+/* --- Vertical Alignment Lockdown --- */
+.track-item, .upcoming-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Forces everything to stack from the top down */
 }
 
-/* --- Standardize the gap below the art --- */
+/* Force the ART to have NO bottom margin */
 .track-cover {
-    margin-bottom: 0px; /* Reset this to zero so the container handles the gap */
+    margin-bottom: 0 !important;
 }
 
+/* Force the BUTTON ROW to be exactly 20px below the art */
 .platform-links {
     display: flex;
     gap: 15px;
     justify-content: center;
-    margin-top: 20px !important; /* Forces BOTH columns to have an identical 20px gap */
-    width: 100%;
+    margin-top: 20px !important; 
+    margin-bottom: 10px !important; /* Space between buttons and title */
+}
+
+/* Force the TITLE to be exactly 5px below the buttons */
+.track-title {
+    margin-top: 0 !important;
+    margin-bottom: 5px !important;
+}
+
+/* Force the STATUS TAG (3/27) to stay tight */
+.status-tag {
+    margin-top: 0 !important;
+    font-size: 0.75rem;
+    color: #ffcc99;
+    letter-spacing: 2px;
 }
