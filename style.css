@@ -10,7 +10,7 @@ body {
     flex-direction: column;
     align-items: center;
     min-height: 100vh; 
-    padding: 5px 20px 20px; /* 5px at top for that tiny sliver of space */
+    padding: 5px 20px 20px; /* 5px top for a sliver of breathing room */
     text-align: center;
     overflow-x: hidden;
 }
@@ -28,7 +28,7 @@ p.tagline {
     letter-spacing: 2px;
     font-size: 0.9rem;
     opacity: 0.7;
-    margin-bottom: 25px; /* Default spacing */
+    margin-bottom: 0; /* Let the video-container margin handle the gap */
 }
 
 /* --- Social Icons --- */
@@ -64,11 +64,11 @@ p.tagline {
     filter: drop-shadow(0px 0px 10px rgba(255, 204, 153, 0.2)); 
 }
 
-/* --- Video Section --- */
+/* --- Video Section (Horizon Sync Spacing) --- */
 .video-container {
     width: 100%;
     max-width: 1000px;
-    margin: 40px auto; /* Default desktop margin */
+    margin: 25px auto !important; /* Standardized gap above/below section */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -78,7 +78,8 @@ p.tagline {
     font-size: 1.2rem;
     letter-spacing: 3px;
     color: #ffcc99;
-    margin-bottom: 25px;
+    margin-top: 0;
+    margin-bottom: 10px;
 }
 
 .video-container h3 {
@@ -111,10 +112,10 @@ p.tagline {
 }
 
 .video-links {
-    margin-top: 25px !important;
+    margin-top: 25px !important; /* Bottom gap matching top gap */
 }
 
-/* --- Music Grid & Buttons --- */
+/* --- Music Grid & Alignment --- */
 .music-grid {
     display: flex;
     flex-wrap: wrap;
@@ -159,8 +160,6 @@ p.tagline {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
     transition: transform 0.3s ease;
 }
-
-.track-cover:hover { transform: scale(1.03); }
 
 .platform-links {
     display: flex;
@@ -213,7 +212,7 @@ footer {
 }
 
 /* ==========================================================================
-   2. MOBILE SPECIFIC (max-width: 600px) - THE CRUNCH
+   2. MOBILE SPECIFIC (max-width: 600px)
    ========================================================================== */
 @media screen and (max-width: 600px) {
     h1 {
@@ -227,24 +226,13 @@ footer {
         padding: 8px;
     }
 
-    /* THE CRUNCH: Pulling h2 closer to tagline */
     p.tagline {
         font-size: 0.75rem;
-        margin-bottom: 5px; /* Reduced gap below tagline */
-    }
-
-    .video-container {
-        margin-top: 5px !important; /* Pulls entire video unit up */
-    }
-
-    .video-container h2 {
-        margin-top: 0;
-        margin-bottom: 10px;
     }
 }
 
 /* ==========================================================================
-   3. DESKTOP SPECIFIC (min-width: 768px) - THE HIDE
+   3. DESKTOP SPECIFIC (min-width: 768px)
    ========================================================================== */
 @media screen and (min-width: 768px) {
     .main-logo {
@@ -261,12 +249,7 @@ footer {
         padding: 5px;
     }
 
-    /* Hide the h3 song title on desktop */
     .video-container h3 {
-        display: none; 
-    }
-    
-    .video-container {
-        margin-top: 10px !important;
+        display: none; /* Hidden on Desktop only */
     }
 }
