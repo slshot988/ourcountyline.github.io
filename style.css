@@ -1,3 +1,6 @@
+/* ==========================================================================
+   1. GLOBAL STYLES (Applies to both Mobile & Desktop)
+   ========================================================================== */
 body {
     background-color: #0d0c0a;
     color: #d4c3a1;
@@ -6,244 +9,69 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* We changed 'height: 100vh' to 'min-height' and added padding */
     min-height: 100vh; 
-    padding: 5px 20px; 
+    padding: 5px 20px 20px; /* 5px at top for that tiny sliver of space */
     text-align: center;
-    overflow-x: hidden; /* Prevents awkward side-scrolling on mobile */
+    overflow-x: hidden;
 }
 
 h1 {
     font-size: 3.5rem;
     letter-spacing: 0.2rem;
     text-shadow: 0px 0px 15px rgba(255, 69, 0, 0.3);
-    margin-top: -10px; /* --- NEW: Uses a small negative margin to tuck the text under the logo glow --- */
+    margin-top: -10px;
     margin-bottom: 0;
 }
 
-p {
+p.tagline {
     text-transform: uppercase;
     letter-spacing: 2px;
     font-size: 0.9rem;
     opacity: 0.7;
+    margin-bottom: 25px; /* Default spacing */
 }
-/* --- Social Media Icon Styles (Mobile Optimized) --- */
+
+/* --- Social Icons --- */
 .social-icons {
-    margin: 3px 0; /* Creates breathing room between the title and the links */
-    display: flex; /* This ensures they stack neatly and space evenly */
+    margin: 3px 0;
+    display: flex;
     justify-content: center;
-    flex-wrap: wrap; /* Prevents them from crowding on very small screens */
+    flex-wrap: wrap;
 }
 
 .social-icons a {
-    color: #ffcc99; /* --- NEW COLOR: Warmer, Ember-Gold to pop against dark charcoal --- */
-    font-size: 2.0rem; /* --- NEW SIZE: Increased from ~1.8rem to 2.5rem (approx. 40px) --- */
-    margin: 10px 20px; /* --- NEW SPACING: Added 10px vertically and 20px horizontally for tap target separation --- */
+    color: #ffcc99;
+    font-size: 2.0rem;
+    margin: 10px 20px;
     text-decoration: none;
-    transition: all 0.3s ease; /* Smooth fade for the hover effect */
-    opacity: 0.8; /* Keeps them subtle until touched */
-    display: inline-block; /* Essential for padding to work for touch targets */
-    padding: 10px; /* --- NEW ADDITION: This creates an "Invisible Buffer" making the whole area clickable, even the space between icons --- */
+    transition: all 0.3s ease;
+    opacity: 0.8;
+    display: inline-block;
+    padding: 10px;
 }
 
-.social-icons a:hover,
-.social-icons a:active { /* :active is critical for mobile touch feedback */
+.social-icons a:hover, .social-icons a:active {
     opacity: 1;
-    color: #fff; /* Brighter white pop on interaction */
-    transform: scale(1.1); /* Slight "pop" on hover/touch */
-    text-shadow: 0px 0px 15px rgba(255, 69, 0, 0.7); /* Ember glow effect */
+    color: #fff;
+    transform: scale(1.1);
+    text-shadow: 0px 0px 15px rgba(255, 69, 0, 0.7);
 }
 
-/* --- Logo Styling --- */
 .main-logo {
     width: 250px; 
     max-width: 80%; 
     height: auto;
-    margin-bottom: 0px; /* --- REDUCED: Changed from 20px to 0 to pull the text up --- */
     filter: drop-shadow(0px 0px 10px rgba(255, 204, 153, 0.2)); 
 }
 
-/* --- Streaming Buttons --- */
-.spotify-btn, .pre-save-btn {
-    display: inline-block;
-    background-color: #1DB954; /* Spotify Green */
-    color: #fff;
-    padding: 12px 20px;
-    border-radius: 25px;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 0.8rem;
-    letter-spacing: 1px;
-    margin-top: 15px;
-    transition: all 0.3s ease;
-    border: none;
-}
-
-.spotify-btn:hover {
-    background-color: #1ed760;
-    box-shadow: 0px 0px 15px rgba(29, 185, 84, 0.4);
-    transform: translateY(-2px);
-}
-
-.pre-save-btn {
-    background-color: transparent;
-    border: 1px solid #ffcc99; /* Ember Gold */
-    color: #ffcc99;
-}
-
-.pre-save-btn:hover {
-    background-color: #ffcc99;
-    color: #0d0c0a;
-}
-
-.track-title {
-    font-family: 'Georgia', serif;
-    font-size: 1.1rem;
-    margin-bottom: 5px;
-    color: #d4c3a1;
-}
-
-/* --- Streaming Buttons and Cover Art --- */
-.track-cover {
-    width: 100%; /* Responsive to column width */
-    max-width: 250px; /* Limits size on large screens */
-    height: auto;
-    aspect-ratio: 1 / 1; /* Forces 1:1 ratio */
-    border-radius: 4px; /* Subtle curve on corners */
-    border: 1px solid rgba(212, 195, 161, 0.2); /* Faint gold border */
-    margin-bottom: 15px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Adds depth */
-}
-
-.platform-links {
-    display: flex;
-    gap: 15px;
-    justify-content: center;
-    margin-top: 15px;
-}
-
-.platform-btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
-    font-size: 1.2rem;
-    color: #fff;
-    text-decoration: none;
-    transition: all 0.3s ease;
-    border: 1px solid rgba(212, 195, 161, 0.3);
-    background: rgba(255, 255, 255, 0.05);
-}
-
-.platform-btn:hover {
-    transform: translateY(-3px);
-    border-color: #ffcc99;
-    box-shadow: 0px 5px 15px rgba(255, 204, 153, 0.2);
-}
-
-/* Platform Colors on Hover */
-.platform-btn.spotify:hover { color: #1DB954; }
-.platform-btn.apple:hover { color: #FC3C44; }
-.platform-btn.youtube:hover { color: #FF0000; }
-
-.spotify-btn:hover {
-    background-color: #1ed760;
-    box-shadow: 0px 0px 15px rgba(29, 185, 84, 0.4);
-    transform: translateY(-2px);
-}
-
-
-.pre-save-btn:hover {
-    background-color: #ffcc99;
-    color: #0d0c0a;
-}
-
-.track-title {
-    font-family: 'Georgia', serif;
-    font-size: 1.1rem;
-    margin-bottom: 5px;
-    color: #d4c3a1;
-}
-
-/* --- The Music Grid Layout Logic --- */
-.music-grid {
-    display: flex;
-    flex-wrap: wrap; /* This allows them to stack on phones */
-    justify-content: center;
-    gap: 40px;
-    margin-top: 50px;
-    width: 100%;
-    max-width: 1000px;
-}
-
-.music-column {
-    flex: 1;
-    min-width: 300px; /* Forces stack on mobile, side-by-side on desktop */
-    max-width: 400px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.music-column h3 {
-    font-size: 1.2rem;
-    letter-spacing: 3px;
-    margin-bottom: 25px;
-    color: #ffcc99;
-}
-
-/* Ensure the track items behave like containers that push buttons to the bottom */
-.track-item, .upcoming-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 100%; /* Important for alignment */
-    justify-content: space-between;
-}
-
-.button-wrapper {
-    margin-top: auto; /* This forces the button to the absolute bottom of its container */
-    padding-top: 20px;
-}
-
-/* Add a subtle "lift" effect to the art when hovered so they know it's clickable */
-.track-cover {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    cursor: pointer;
-}
-
-.track-cover:hover {
-    transform: scale(1.03);
-    box-shadow: 0px 8px 20px rgba(255, 204, 153, 0.2);
-}
-
-/* --- Footer Styling --- */
-footer {
-    margin-top: 60px;
-    padding-bottom: 30px;
-    width: 100%;
-    border-top: 1px solid rgba(212, 195, 161, 0.1);
-}
-
-.copyright-text {
-    font-size: 0.7rem;
-    color: #d4c3a1;
-    opacity: 0.4; /* Very subtle fade */
-    letter-spacing: 1px;
-    margin-top: 20px;
-}
-
-/* --- Featured Video Styling --- */
+/* --- Video Section --- */
 .video-container {
     width: 100%;
     max-width: 1000px;
-    margin: 40px auto;
-    padding: 0; /* --- REMOVED side padding to prevent shifting --- */
+    margin: 40px auto; /* Default desktop margin */
     display: flex;
     flex-direction: column;
-    align-items: center; /* Forces everything inside to center */
+    align-items: center;
 }
 
 .video-container h2 {
@@ -257,20 +85,20 @@ footer {
     font-family: 'Georgia', serif;
     font-style: italic;
     font-size: 1.4rem;
-    color: #ff6600; /* Muted tan/gold */
-    opacity: 0.8;
+    color: #ff6600; /* Ember Orange */
+    opacity: 0.9;
     margin-top: -10px;
     margin-bottom: 25px;
     letter-spacing: 1px;
-    text-transform: none; /* Keeps it in Sentence Case for elegance */
+    text-transform: none;
 }
 
 .video-wrapper {
     position: relative;
-    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+    padding-bottom: 56.25%;
     height: 0;
-    width: 90%; /* --- ADDED: Gives it a clean margin on mobile without shifting --- */
-    max-width: 800px; /* Keeps it from getting TOO big on desktop */
+    width: 90%;
+    max-width: 800px;
     overflow: hidden;
     border-radius: 8px;
     border: 1px solid rgba(212, 195, 161, 0.2);
@@ -279,118 +107,165 @@ footer {
 
 .video-wrapper iframe {
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 0; left: 0; width: 100%; height: 100%;
+}
+
+.video-links {
+    margin-top: 25px !important;
+}
+
+/* --- Music Grid & Buttons --- */
+.music-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 50px;
     width: 100%;
-    height: 100%;
+    max-width: 1000px;
 }
 
-/* --- Mobile Specific Adjustments --- */
-@media screen and (max-width: 600px) {
-    h1 {
-        font-size: 2.2rem; /* Reduced from 3.5rem to fit single line */
-        letter-spacing: 0.1rem; /* Slightly tighter for mobile fit */
-        margin-top: -5px; /* Adjusting the tuck under the logo for the smaller size */
-    }
-
-    /* --- Tightening the Social Row for Mobile --- */
-    .social-icons a {
-        font-size: 1.6rem; /* Dropping from 1.9rem to 1.6rem (~25px) */
-        margin: 2px 2px;   /* Dropping horizontal margin to almost zero */
-        padding: 8px;      /* Slightly smaller "invisible buffer" to save width */
-    }
-
-    .tagline {
-        font-size: 0.75rem; /* Shrinking the tagline slightly so it stays elegant */
-        padding: 0 10px; /* Adds a tiny bit of side-breathing room */
-    }
+.music-column {
+    flex: 1;
+    min-width: 300px;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-/* --- Vertical Alignment Lockdown --- */
+.music-column h3 {
+    font-size: 1.2rem;
+    letter-spacing: 3px;
+    margin-bottom: 25px;
+    color: #ffcc99;
+}
+
 .track-item, .upcoming-item {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start; /* Forces everything to stack from the top down */
+    justify-content: flex-start;
 }
 
-/* Force the ART to have NO bottom margin */
 .track-cover {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    border-radius: 4px;
+    border: 1px solid rgba(212, 195, 161, 0.2);
     margin-bottom: 0 !important;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
 }
 
-/* Force the BUTTON ROW to be exactly 20px below the art */
+.track-cover:hover { transform: scale(1.03); }
+
 .platform-links {
     display: flex;
     gap: 15px;
     justify-content: center;
-    margin-top: 20px !important; 
-    margin-bottom: 10px !important; /* Space between buttons and title */
+    margin-top: 20px !important;
+    margin-bottom: 10px !important;
 }
 
-/* Force the TITLE to be exactly 5px below the buttons */
+.platform-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px; height: 45px;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid rgba(212, 195, 161, 0.3);
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.platform-btn:hover { color: #ffcc99; transform: translateY(-3px); }
+
 .track-title {
+    font-size: 1.1rem;
     margin-top: 0 !important;
     margin-bottom: 5px !important;
+    color: #d4c3a1;
 }
 
-/* Force the STATUS TAG (3/27) to stay tight */
 .status-tag {
-    margin-top: 0 !important;
     font-size: 0.75rem;
     color: #ffcc99;
     letter-spacing: 2px;
 }
 
-/* --- Featured Video Links Styling --- */
-.video-links {
-    margin-top: 25px !important; /* Creates clear separation from the video player */
-    margin-bottom: 0;
+footer {
+    margin-top: 60px;
+    padding-bottom: 30px;
+    width: 100%;
+    border-top: 1px solid rgba(212, 195, 161, 0.1);
 }
 
-/* Optional: Make the featured buttons slightly larger to highlight the new release */
-.video-links .platform-btn {
-    width: 50px;
-    height: 50px;
-    font-size: 1.4rem;
-    border-color: rgba(255, 204, 153, 0.5); /* Slightly brighter border for the feature */
+.copyright-text {
+    font-size: 0.7rem;
+    color: #d4c3a1;
+    opacity: 0.4;
+    margin-top: 20px;
 }
 
-/* --- Desktop Only Tweaks --- */
+/* ==========================================================================
+   2. MOBILE SPECIFIC (max-width: 600px) - THE CRUNCH
+   ========================================================================== */
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 2.2rem;
+        margin-top: -5px;
+    }
+
+    .social-icons a {
+        font-size: 1.6rem;
+        margin: 2px 2px;
+        padding: 8px;
+    }
+
+    /* THE CRUNCH: Pulling h2 closer to tagline */
+    p.tagline {
+        font-size: 0.75rem;
+        margin-bottom: 5px; /* Reduced gap below tagline */
+    }
+
+    .video-container {
+        margin-top: 5px !important; /* Pulls entire video unit up */
+    }
+
+    .video-container h2 {
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+}
+
+/* ==========================================================================
+   3. DESKTOP SPECIFIC (min-width: 768px) - THE HIDE
+   ========================================================================== */
 @media screen and (min-width: 768px) {
     .main-logo {
-        width: 160px; /* Reduces size from 250px to 180px on larger screens */
-        margin-bottom: 0px; 
+        width: 160px;
     }
-}
 
-@media screen and (min-width: 768px) {
-    /* Shrink the main brand name */
     h1 {
-        font-size: 2.0rem; /* Reduced from 3.5rem to save vertical space */
-        margin-top: -10px;
+        font-size: 2.0rem;
     }
 
-    /* Shrink the social icon row */
     .social-icons a {
-        font-size: 1.5rem; /* Dropping icon size for desktop elegance */
-        margin: 5px 10px;  /* Tighter spacing */
-        padding: 5px;      /* Reduced buffer */
+        font-size: 1.5rem;
+        margin: 5px 10px;
+        padding: 5px;
     }
 
-    /* Pull the video unit higher */
-    .video-container {
-        margin-top: 10px;
-    }
-}
-
-@media screen and (min-width: 768px) {
-    /* Goal: Hide the song title since it's in the video player */
+    /* Hide the h3 song title on desktop */
     .video-container h3 {
         display: none; 
     }
     
-    /* Further crunch the top for Desktop visibility */
     .video-container {
         margin-top: 10px !important;
     }
