@@ -121,7 +121,7 @@ p.tagline {
     flex-wrap: wrap;
     justify-content: center;
     gap: 40px;
-    margin-top: 50px;
+    margin-top: 25px;
     width: 100%;
     max-width: 1000px;
 }
