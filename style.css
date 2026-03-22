@@ -254,14 +254,15 @@ footer {
 }
 
 .video-container h3 {
-    font-size: 1.5rem;          /* Smaller than the H2 above it */
     font-family: 'Georgia', serif;
-    font-style: italic;         /* Gives it a "Song Title" feel */
-    color: #d4c3a1;             /* The muted gold/tan from your body text */
-    margin-top: -15px;          /* Pulls it closer to the H2 above it */
-    margin-bottom: 20px;        /* Space before the video starts */
+    font-style: italic;
+    font-size: 1.4rem;
+    color: #d4c3a1; /* Muted tan/gold */
+    opacity: 0.8;
+    margin-top: -10px;
+    margin-bottom: 25px;
     letter-spacing: 1px;
-    opacity: 0.9;
+    text-transform: none; /* Keeps it in Sentence Case for elegance */
 }
 
 .video-wrapper {
@@ -360,5 +361,25 @@ footer {
     .main-logo {
         width: 180px; /* Reduces size from 250px to 180px on larger screens */
         margin-bottom: 0px; 
+    }
+}
+
+@media screen and (min-width: 768px) {
+    /* Shrink the main brand name */
+    h1 {
+        font-size: 2.5rem; /* Reduced from 3.5rem to save vertical space */
+        margin-top: -10px;
+    }
+
+    /* Shrink the social icon row */
+    .social-icons a {
+        font-size: 1.5rem; /* Dropping icon size for desktop elegance */
+        margin: 5px 10px;  /* Tighter spacing */
+        padding: 5px;      /* Reduced buffer */
+    }
+
+    /* Pull the video unit higher */
+    .video-container {
+        margin-top: 10px;
     }
 }
