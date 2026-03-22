@@ -122,7 +122,7 @@ p.tagline {
     flex-wrap: wrap; 
     justify-content: center;
     gap: 40px;
-    margin-top: 25px; /* This is now your consistent "Horizon" gap */
+    margin-top: 0px; /* This is now your consistent "Horizon" gap */
     width: 100%;
     max-width: 1000px;
 }
