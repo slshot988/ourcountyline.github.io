@@ -257,7 +257,7 @@ footer {
     font-family: 'Georgia', serif;
     font-style: italic;
     font-size: 1.4rem;
-    color: #d4c3a1; /* Muted tan/gold */
+    color: #ff6600; /* Muted tan/gold */
     opacity: 0.8;
     margin-top: -10px;
     margin-bottom: 25px;
@@ -359,7 +359,7 @@ footer {
 /* --- Desktop Only Tweaks --- */
 @media screen and (min-width: 768px) {
     .main-logo {
-        width: 180px; /* Reduces size from 250px to 180px on larger screens */
+        width: 160px; /* Reduces size from 250px to 180px on larger screens */
         margin-bottom: 0px; 
     }
 }
@@ -367,7 +367,7 @@ footer {
 @media screen and (min-width: 768px) {
     /* Shrink the main brand name */
     h1 {
-        font-size: 2.5rem; /* Reduced from 3.5rem to save vertical space */
+        font-size: 2.0rem; /* Reduced from 3.5rem to save vertical space */
         margin-top: -10px;
     }
 
