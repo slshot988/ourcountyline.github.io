@@ -253,6 +253,17 @@ footer {
     margin-bottom: 25px;
 }
 
+.video-container h3 {
+    font-size: 1.5rem;          /* Smaller than the H2 above it */
+    font-family: 'Georgia', serif;
+    font-style: italic;         /* Gives it a "Song Title" feel */
+    color: #d4c3a1;             /* The muted gold/tan from your body text */
+    margin-top: -15px;          /* Pulls it closer to the H2 above it */
+    margin-bottom: 20px;        /* Space before the video starts */
+    letter-spacing: 1px;
+    opacity: 0.9;
+}
+
 .video-wrapper {
     position: relative;
     padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
@@ -342,4 +353,12 @@ footer {
     height: 50px;
     font-size: 1.4rem;
     border-color: rgba(255, 204, 153, 0.5); /* Slightly brighter border for the feature */
+}
+
+/* --- Desktop Only Tweaks --- */
+@media screen and (min-width: 768px) {
+    .main-logo {
+        width: 180px; /* Reduces size from 250px to 180px on larger screens */
+        margin-bottom: 0px; 
+    }
 }
