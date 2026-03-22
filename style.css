@@ -383,3 +383,15 @@ footer {
         margin-top: 10px;
     }
 }
+
+@media screen and (min-width: 768px) {
+    /* Goal: Hide the song title since it's in the video player */
+    .video-container h3 {
+        display: none; 
+    }
+    
+    /* Further crunch the top for Desktop visibility */
+    .video-container {
+        margin-top: 10px !important;
+    }
+}
