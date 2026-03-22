@@ -8,7 +8,7 @@ body {
     align-items: center;
     /* We changed 'height: 100vh' to 'min-height' and added padding */
     min-height: 100vh; 
-    padding: 50px 20px; 
+    padding: 5px 20px; 
     text-align: center;
     overflow-x: hidden; /* Prevents awkward side-scrolling on mobile */
 }
