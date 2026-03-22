@@ -329,3 +329,17 @@ footer {
     color: #ffcc99;
     letter-spacing: 2px;
 }
+
+/* --- Featured Video Links Styling --- */
+.video-links {
+    margin-top: 25px !important; /* Creates clear separation from the video player */
+    margin-bottom: 0;
+}
+
+/* Optional: Make the featured buttons slightly larger to highlight the new release */
+.video-links .platform-btn {
+    width: 50px;
+    height: 50px;
+    font-size: 1.4rem;
+    border-color: rgba(255, 204, 153, 0.5); /* Slightly brighter border for the feature */
+}
