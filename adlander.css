@@ -1,0 +1,90 @@
+/* adlander.css - Sterile Squeeze Page Styles */
+body { 
+    background-color: #0d0c0a; /* Exact match to main site */
+    color: #d4c3a1;            /* Exact match to main site gold */
+    font-family: 'Georgia', serif; 
+    margin: 0; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    min-height: 100vh; 
+    text-align: center; 
+}
+
+.squeeze-container { 
+    width: 90%; 
+    max-width: 400px; 
+    padding: 20px; 
+}
+
+.album-art { 
+    width: 100%; 
+    border-radius: 8px; 
+    box-shadow: 0 10px 30px rgba(0,0,0,0.8); 
+    margin-bottom: 25px; 
+}
+
+h1 { 
+    font-size: 1.6rem; 
+    margin-bottom: 5px; 
+    color: #fff; /* White for high-contrast titles */
+}
+
+.artist-name { 
+    margin-bottom: 35px; 
+    opacity: 0.7; 
+    text-transform: uppercase; 
+    letter-spacing: 2px; 
+    font-size: 0.8rem; 
+}
+
+/* --- Button Logic --- */
+.btn { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%; 
+    padding: 18px; 
+    margin-bottom: 15px; 
+    border-radius: 40px; 
+    text-decoration: none; 
+    font-weight: bold; 
+    text-transform: uppercase; 
+    letter-spacing: 1px; 
+    transition: all 0.3s ease; /* Smooth glow transition */
+    color: #fff; /* White text on buttons */
+}
+
+/* Spotify Initial State */
+.spotify { 
+    background-color: #1DB954; 
+    border: 1px solid #1DB954;
+}
+
+/* Apple Initial State */
+.apple { 
+    background-color: #FC3C44; /* Standard Apple Music Red */
+    border: 1px solid #FC3C44;
+}
+
+/* --- Hover/Active Glow Effects --- */
+.btn:hover, .btn:active { 
+    transform: scale(1.03); 
+    background-color: transparent; /* Makes the button "hollow" on hover */
+    color: #fff;
+}
+
+.spotify:hover {
+    border-color: #1DB954;
+    box-shadow: 0px 0px 20px rgba(29, 185, 84, 0.6); /* Spotify Green Glow */
+}
+
+.apple:hover {
+    border-color: #FC3C44;
+    box-shadow: 0px 0px 20px rgba(252, 60, 68, 0.6); /* Apple Red Glow */
+}
+
+.btn i {
+    margin-right: 10px;
+    font-size: 1.2rem;
+}
