@@ -1,20 +1,23 @@
 /* adlander.css - Sterile Squeeze Page Styles */
 body { 
-    background-color: #0d0c0a; /* Exact match to main site */
-    color: #d4c3a1;            /* Exact match to main site gold */
+    background-color: #0d0c0a; 
+    color: #d4c3a1;            
     font-family: 'Georgia', serif; 
     margin: 0; 
     display: flex; 
     justify-content: center; 
-    align-items: center; 
+    /* --- CHANGED: Align to top instead of center --- */
+    align-items: flex-start; 
     min-height: 100vh; 
     text-align: center; 
+    /* --- ADDED: Top padding to pull image up but keep a clean gap --- */
+    padding-top: 40px; 
 }
 
 .squeeze-container { 
     width: 90%; 
     max-width: 400px; 
-    padding: 20px; 
+    padding: 0 10px; /* Reduced side padding to give buttons room */
 }
 
 .album-art { 
@@ -51,8 +54,10 @@ h1 {
     font-weight: bold; 
     text-transform: uppercase; 
     letter-spacing: 1px; 
-    transition: all 0.3s ease; /* Smooth glow transition */
-    color: #fff; /* White text on buttons */
+    transition: all 0.3s ease;
+    color: #fff;
+    /* --- CRITICAL FIX: Ensures width: 100% stays inside the container --- */
+    box-sizing: border-box; 
 }
 
 /* Spotify Initial State */
