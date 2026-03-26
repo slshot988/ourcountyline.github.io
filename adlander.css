@@ -93,3 +93,26 @@ h1 {
     margin-right: 10px;
     font-size: 1.2rem;
 }
+
+/* --- Desktop Specific Tightening --- */
+@media (min-width: 768px) {
+    body {
+        padding-top: 20px; /* Reduces top gap by 50% */
+        align-items: center; /* Re-centers vertically for better desktop balance */
+    }
+
+    .album-art {
+        max-width: 300px; /* Slightly smaller art on desktop to save vertical space */
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 15px; /* Tighter gap under image */
+    }
+
+    .artist-name {
+        margin-bottom: 20px; /* Tighter gap under artist name */
+    }
+    
+    h1 {
+        font-size: 1.4rem; /* Slightly smaller header to keep it compact */
+    }
+}
