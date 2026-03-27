@@ -143,11 +143,13 @@ p.tagline {
     color: #ffcc99;
 }
 
+/* --- Music Grid & Alignment --- */
 .track-item, .upcoming-item {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
+    margin-bottom: 50px; /* --- ADDED: Creates breathing room between stacked tracks --- */
 }
 
 .track-cover {
