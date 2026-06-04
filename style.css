@@ -256,3 +256,192 @@ footer {
         display: none; /* Hidden on Desktop only */
     }
 }
+
+/* ==========================================================================
+   4. FEATURED ALBUM SHOWCASE ARCHITECTURE (Go-Live 6/9 Prep)
+   ========================================================================== */
+.featured-album-section {
+    width: 100%;
+    max-width: 1000px;
+    margin: 40px auto 0 auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.album-showcase-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 30px;
+}
+
+.album-artwork-column {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.album-main-cover {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    border-radius: 4px;
+    border: 1px solid rgba(212, 195, 161, 0.2);
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.6);
+}
+
+.album-main-title {
+    font-size: 1.5rem;
+    color: #ffcc99;
+    margin: 20px 0 5px 0 !important;
+    font-family: 'Georgia', serif;
+    letter-spacing: 1px;
+}
+
+.album-release-date {
+    font-size: 0.95rem;
+    color: #d4c3a1;
+    opacity: 0.8;
+    margin: 0 0 20px 0 !important;
+    letter-spacing: 1px;
+}
+
+/* --- Reconstructed Tracklist Column --- */
+.album-tracklist-column {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px; /* Creates clean breathing room between tracks */
+    margin-top: 10px;
+    text-align: center;
+}
+
+.track-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(212, 195, 161, 0.1);
+}
+
+.track-row:last-child {
+    border-bottom: none;
+}
+
+.track-meta-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.track-index {
+    font-family: 'Georgia', serif;
+    font-size: 1.1rem;
+    color: #ffcc99;
+    opacity: 0.7;
+}
+
+.track-name {
+    font-family: 'Georgia', serif;
+    font-size: 1.2rem;
+    color: #d4c3a1;
+    font-weight: normal;
+}
+
+/* --- Target Benchmark: Circular Platform Button Nest --- */
+.track-actions {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.track-icon-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    font-size: 1.1rem;
+    color: #fff;
+    text-decoration: none !important; /* Kills default hyper-blue underlining */
+    border: 1px solid rgba(212, 195, 161, 0.3);
+    background: rgba(255, 255, 255, 0.05);
+    transition: all 0.3s ease;
+}
+
+/* Clean, uniform color responses on hover matching target video blocks */
+.track-icon-btn:hover, .track-icon-btn:active {
+    color: #ffcc99;
+    border-color: #ffcc99;
+    transform: translateY(-3px);
+    box-shadow: 0px 4px 12px rgba(255, 102, 0, 0.2);
+}
+
+/* Explicit tone for the Liner Notes Page Mark */
+.track-icon-btn.liner-notes-toggle {
+    color: #ff9966;
+    border-color: rgba(255, 153, 102, 0.4);
+}
+
+.track-icon-btn.liner-notes-toggle:hover {
+    color: #fff;
+    border-color: #fff;
+}
+
+/* Desktop Fluid Breakpoint Alignment */
+@media screen and (min-width: 768px) {
+    .album-showcase-container {
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 50px;
+        margin-top: 30px;
+    }
+
+    .album-artwork-column {
+        flex: 1;
+        max-width: 400px;
+        position: sticky;
+        top: 20px; /* Locks album art on view scroll */
+    }
+
+    .album-tracklist-column {
+        flex: 1.2;
+        max-width: 500px;
+        text-align: left;
+    }
+
+    .track-row {
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding-bottom: 15px;
+    }
+
+    .track-meta-wrap {
+        justify-content: flex-start;
+        margin-bottom: 12px;
+    }
+
+    .track-actions {
+        justify-content: flex-start;
+        gap: 15px;
+    }
+
+    .track-icon-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+    }
+}
