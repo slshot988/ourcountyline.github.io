@@ -28,7 +28,7 @@ p.tagline {
     letter-spacing: 2px;
     font-size: 0.9rem;
     opacity: 0.7;
-    margin-bottom: 0;
+    margin-bottom: 10px !important; /* Horizon Sync: Pulls the next section container up tightly */
 }
 
 /* --- Social Icons --- */
@@ -62,6 +62,15 @@ p.tagline {
     max-width: 80%; 
     height: auto;
     filter: drop-shadow(0px 0px 10px rgba(255, 204, 153, 0.2)); 
+}
+
+/* --- System Layout Control: Strips lower section padding lag --- */
+section.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 0px !important;
 }
 
 /* --- Video Section (Centered Horizon Sync) --- */
@@ -105,7 +114,7 @@ p.tagline {
     border-radius: 8px;
     border: 1px solid rgba(212, 195, 161, 0.2);
     box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5);
-    margin: 0 auto;
+    margin: 0 auto; /* Forces embedded playlist component to absolute center */
 }
 
 .video-wrapper iframe {
@@ -118,12 +127,111 @@ p.tagline {
 }
 
 /* ==========================================================================
-   2. INTERACTIVE FEATURED ALBUM SHOWCASE (Unified Vertical Configuration)
+   3. LEGACY MUSIC GRID ARCHITECTURE (Untouched Continuity for index.html)
+   ========================================================================== */
+.music-grid {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    gap: 40px;
+    margin-top: 0px; 
+    width: 100%;
+    max-width: 1000px;
+}
+
+.music-column {
+    flex: 1;
+    min-width: 300px;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.music-column h3 {
+    font-size: 1.2rem;
+    letter-spacing: 3px;
+    margin-bottom: 25px;
+    color: #ffcc99;
+}
+
+.track-item, .upcoming-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 50px; 
+}
+
+.track-cover {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    border-radius: 4px;
+    border: 1px solid rgba(212, 195, 161, 0.2);
+    margin-bottom: 0 !important;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+}
+
+.platform-links {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 20px !important;
+    margin-bottom: 10px !important;
+}
+
+.platform-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px; height: 45px;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid rgba(212, 195, 161, 0.3);
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.platform-btn:hover { color: #ffcc99; transform: translateY(-3px); }
+
+.track-title {
+    font-size: 1.1rem;
+    margin-top: 0 !important;
+    margin-bottom: 5px !important;
+    color: #d4c3a1;
+}
+
+.status-tag {
+    font-size: 0.75rem;
+    color: #ffcc99;
+    letter-spacing: 2px;
+}
+
+footer {
+    margin-top: 60px;
+    padding-bottom: 30px;
+    width: 100%;
+    border-top: 1px solid rgba(212, 195, 161, 0.1);
+}
+
+.copyright-text {
+    font-size: 0.7rem;
+    color: #d4c3a1;
+    opacity: 0.4;
+    margin-top: 20px;
+}
+
+/* ==========================================================================
+   4. INTERACTIVE FEATURED ALBUM SHOWCASE (Unified Vertical Configuration)
    ========================================================================== */
 .featured-album-section {
     width: 100%;
-    max-width: 650px; /* Hard constraint protects the horizon line on desktop */
-    margin: 50px auto 0 auto;
+    max-width: 650px; 
+    margin: 20px auto 0 auto !important; /* Replaces layout gap with pristine 20px space */
     padding: 0 10px;
     box-sizing: border-box;
     display: flex;
@@ -139,7 +247,7 @@ p.tagline {
     text-transform: uppercase;
 }
 
-/* Master Column Container - Stacked across all viewports natively */
+/* Column Container - Stacked across all mobile and desktop viewports */
 .album-showcase-container {
     display: flex;
     flex-direction: column;
@@ -167,19 +275,19 @@ p.tagline {
 }
 
 .album-main-title {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     color: #fff;
-    margin: 20px 0 5px 0 !important;
+    margin: 15px 0 5px 0 !important;
     font-family: 'Georgia', serif;
-    letter-spacing: 0.5px;
+    letter-spacing: 1px;
 }
 
 .album-release-date {
-    font-size: 0.85rem;
+    font-size: 0.8rem;
     color: #ffcc99;
     letter-spacing: 2px;
     opacity: 0.8;
-    margin: 0 0 15px 0 !important;
+    margin: 0 0 10px 0 !important;
     text-transform: uppercase;
 }
 
@@ -199,7 +307,7 @@ p.tagline {
     align-items: center;
     justify-content: space-between; 
     width: 100%;
-    padding: 12px 16px;
+    padding: 10px 14px;
     background: rgba(255, 255, 255, 0.02);
     border-radius: 4px;
     border: 1px solid rgba(212, 195, 161, 0.06);
@@ -216,7 +324,7 @@ p.tagline {
 .track-meta-wrap {
     display: flex;
     align-items: center;
-    gap: 14px;
+    gap: 12px;
     text-align: left;
 }
 
@@ -249,7 +357,7 @@ p.tagline {
     height: 36px;
     border-radius: 50%;
     font-size: 0.95rem;
-    color: #fff !important; /* Muted monochrome uniformity across all button paths */
+    color: #fff !important; /* Uniform monochrome line borders across all platform buttons */
     text-decoration: none !important;
     border: 1px solid rgba(212, 195, 161, 0.3);
     background: rgba(255, 255, 255, 0.04);
@@ -265,7 +373,7 @@ p.tagline {
 }
 
 /* ==========================================================================
-   3. RESPONSIVE BREAKPOINT CONTROLS
+   5. RESPONSIVE BREAKPOINT CONTROLS
    ========================================================================== */
 @media screen and (max-width: 600px) {
     h1 {
@@ -318,7 +426,7 @@ p.tagline {
         display: none;
     }
     
-    /* Album art and track containers remain vertical on desktop per directive */
+    /* Album art and track containers remain stacked vertically per directive */
     .album-showcase-container {
         flex-direction: column;
         align-items: center;
