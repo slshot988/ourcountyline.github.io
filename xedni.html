@@ -111,7 +111,6 @@
                             <a href="https://distrokid.com/hyperfollow/ourcountyline/barbed-wire-and-a-sunday-dress" target="_blank" rel="noopener" class="track-icon-btn" title="Spotify" onclick="fbq('track', 'Lead', {content_name: 'Track01-PreSave-Spotify'});"><i class="fab fa-spotify"></i></a>
                             <a href="https://distrokid.com/hyperfollow/ourcountyline/barbed-wire-and-a-sunday-dress" target="_blank" rel="noopener" class="track-icon-btn" title="Apple Music" onclick="fbq('track', 'Lead', {content_name: 'Track01-PreSave-Apple'});"><i class="fab fa-apple"></i></a>
                             <a href="https://distrokid.com/hyperfollow/ourcountyline/barbed-wire-and-a-sunday-dress" target="_blank" rel="noopener" class="track-icon-btn" title="YouTube Music" onclick="fbq('track', 'Lead', {content_name: 'Track01-PreSave-YT'});"><i class="fab fa-youtube"></i></a>
-                            <!-- NATIVE EVENT CAPTURE INTERFACE INJECTED BELOW -->
                             <a href="#liner-notes-our-county-line" class="track-icon-btn" title="Liner Notes" onclick="event.preventDefault(); openLinerNotes('01'); fbq('track', 'ViewContent', {content_name: 'Track01-LinerNotes'});"><i class="fas fa-file-alt"></i></a>
                         </div>
                     </div>
@@ -266,12 +265,12 @@
 
     <footer>
         <p class="copyright-text">Our County Line is an independent, AI-assisted studio project. Real stories and real lyrics, brought to life through next-gen audio tools.</p>   
-        <p class="copyright-text">Our County Line &copy; 2026 County Heritage Records</p>
+        <p class="copyright-text">Our County Line © 2026 County Heritage Records</p>
     </footer>
 
     <div id="linerNotesModal" class="modal-overlay" onclick="closeLinerNotes()">
         <div class="modal-content" onclick="event.stopPropagation()">
-            <span class="modal-close-btn" onclick="closeLinerNotes()">&times;</span>
+            <span class="modal-close-btn" onclick="closeLinerNotes()">×</span>
             <div class="modal-body-wrap">
                 <div class="modal-art-block">
                     <img id="modalTrackArt" src="images/BWAlbumCover.png" alt="Track Artwork">
@@ -279,18 +278,29 @@
                 <div class="modal-text-block">
                     <h4 id="modalTrackTitle">Track Title</h4>
                     <div id="modalTrackLore" class="modal-lore-text"></div>
+                    
+                    <div class="modal-conversion-actions">
+                        <a id="modalSpotifyLink" href="#" target="_blank" rel="noopener" class="modal-platform-btn btn-spotify">
+                            <i class="fab fa-spotify"></i> LISTEN ON SPOTIFY
+                        </a>
+                        <a id="modalAppleLink" href="#" target="_blank" rel="noopener" class="modal-platform-btn btn-apple">
+                            <i class="fab fa-apple"></i> LISTEN ON APPLE MUSIC
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
     <script>
-    // Isolated Master Sandbox Database Block for Track 01
+    // Master Sandbox Database Array for Track 01 Staging Check
     const trackLoreDatabase = {
         "01": {
             title: "Our County Line",
             art: "images/01 - Our County Line.jpg", 
-            story: "We know who we are and where we came from. We start our story with our ultimate statement of who we are, and why we're here. We're proud of our small town roots, and rich music of the Scottish Highlands. This uplifting anthem encourages you to sing along, and be part of our story."
+            story: "We know who we are and where we came from. We start our story with our ultimate statement of who we are, and why we're here. We're proud of our small town roots, and rich music of the Scottish Highlands. This uplifting anthem encourages you to sing along, and be part of our story.",
+            spotify: "https://distrokid.com/hyperfollow/ourcountyline/barbed-wire-and-a-sunday-dress",
+            apple: "https://distrokid.com/hyperfollow/ourcountyline/barbed-wire-and-a-sunday-dress"
         }
     };
 
@@ -301,6 +311,11 @@
             document.getElementById('modalTrackTitle').innerText = data.title;
             document.getElementById('modalTrackArt').src = data.art;
             document.getElementById('modalTrackLore').innerHTML = `<p>${data.story}</p>`;
+            
+            // Hardwire the conversion link targets natively
+            document.getElementById('modalSpotifyLink').href = data.spotify;
+            document.getElementById('modalAppleLink').href = data.apple;
+            
             document.getElementById('linerNotesModal').style.display = 'flex';
         } else {
             console.error("No liner notes data found for track selector path ID:", trackId);
