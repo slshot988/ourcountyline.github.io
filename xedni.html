@@ -111,7 +111,8 @@
                             <a href="https://distrokid.com/hyperfollow/ourcountyline/barbed-wire-and-a-sunday-dress" target="_blank" rel="noopener" class="track-icon-btn" title="Spotify" onclick="fbq('track', 'Lead', {content_name: 'Track01-PreSave-Spotify'});"><i class="fab fa-spotify"></i></a>
                             <a href="https://distrokid.com/hyperfollow/ourcountyline/barbed-wire-and-a-sunday-dress" target="_blank" rel="noopener" class="track-icon-btn" title="Apple Music" onclick="fbq('track', 'Lead', {content_name: 'Track01-PreSave-Apple'});"><i class="fab fa-apple"></i></a>
                             <a href="https://distrokid.com/hyperfollow/ourcountyline/barbed-wire-and-a-sunday-dress" target="_blank" rel="noopener" class="track-icon-btn" title="YouTube Music" onclick="fbq('track', 'Lead', {content_name: 'Track01-PreSave-YT'});"><i class="fab fa-youtube"></i></a>
-                            <a href="#liner-notes-our-county-line" class="track-icon-btn" title="Liner Notes" onclick="e.preventDefault(); openLinerNotes('01'); fbq('track', 'ViewContent', {content_name: 'Track01-LinerNotes'});"><i class="fas fa-file-alt"></i></a>
+                            <!-- NATIVE EVENT CAPTURE INTERFACE INJECTED BELOW -->
+                            <a href="#liner-notes-our-county-line" class="track-icon-btn" title="Liner Notes" onclick="event.preventDefault(); openLinerNotes('01'); fbq('track', 'ViewContent', {content_name: 'Track01-LinerNotes'});"><i class="fas fa-file-alt"></i></a>
                         </div>
                     </div>
 
@@ -268,7 +269,6 @@
         <p class="copyright-text">Our County Line &copy; 2026 County Heritage Records</p>
     </footer>
 
-    
     <div id="linerNotesModal" class="modal-overlay" onclick="closeLinerNotes()">
         <div class="modal-content" onclick="event.stopPropagation()">
             <span class="modal-close-btn" onclick="closeLinerNotes()">&times;</span>
