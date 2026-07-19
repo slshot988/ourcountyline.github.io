@@ -273,7 +273,7 @@ footer {
 /* Unified Artwork Sleeve Column */
 .album-artwork-column {
     width: 100%;
-    max-width: 3300px; 
+    max-width: 330px; 
     text-align: center;
     box-sizing: border-box;
 }
@@ -429,7 +429,7 @@ footer {
 
 @media screen and (min-width: 768px) {
     .main-logo {
-        width: 185px;
+        width: 250px;
     }
 
     h1 {
