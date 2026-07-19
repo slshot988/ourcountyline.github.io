@@ -1,0 +1,17 @@
+User-agent: *
+Allow: /index.html
+Allow: /about.html
+
+# Blocked Squeeze and Test Pages
+Disallow: /bwaasd.html
+Disallow: /cmo.html
+Disallow: /dttb.html
+Disallow: /go.html
+Disallow: /poy.html
+Disallow: /tfbia.html
+Disallow: /wsyof.html
+Disallow: /wwwbt.html
+Disallow: /xedni.html
+
+# Sitemap Directive
+Sitemap: https://ourcountyline.com/sitemap.xml
