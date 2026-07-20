@@ -576,17 +576,32 @@ footer {
     transition: transform 0.2s ease, filter 0.2s ease;
 }
 
-.btn-spotify {
-    background-color: #1DB954 !important; /* Spotify Green */
-}
-
-.btn-apple {
-    background-color: #FC3C44 !important; /* Apple Music Red */
-}
-
 .modal-platform-btn:hover {
     transform: translateY(-2px);
     filter: brightness(1.1);
+}
+
+/* ==========================================================================
+   8. LINK TREE FUNNEL (links.html) & UNIFIED PLATFORM COLORS
+   ========================================================================== */
+
+/* Structure Elements */
+.link-tree-container {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.link-tree-header {
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .link-tree-logo {
@@ -597,4 +612,84 @@ footer {
     margin-bottom: 15px;
     border: 2px solid rgba(212, 195, 161, 0.4); /* Subtle gold ring */
     box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.6);
+}
+
+.link-tree-title {
+    font-size: 1.8rem;
+    color: #d4c3a1;
+    letter-spacing: 2px;
+    margin: 0;
+}
+
+.link-tree-handle {
+    font-size: 0.9rem;
+    color: #ffcc99;
+    opacity: 0.7;
+    margin-top: 5px;
+    letter-spacing: 1px;
+}
+
+/* Link Tree Specific Button Styles */
+.link-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 16px 20px;
+    margin-bottom: 16px;
+    border-radius: 50px;
+    border: none;
+    text-decoration: none;
+    font-family: 'Georgia', serif;
+    font-size: 1.1rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: transform 0.25s ease, filter 0.25s ease;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.link-btn i {
+    position: absolute;
+    left: 24px;
+    font-size: 1.3rem;
+}
+
+.btn-custom-icon {
+    position: absolute;
+    left: 20px;
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+}
+
+.link-btn:hover {
+    transform: translateY(-2px);
+    filter: brightness(1.1);
+}
+
+/* Unified Platform Color Classes (Applies to both Modal & Link Tree buttons) */
+.btn-spotify {
+    background-color: #1DB954 !important; /* Spotify Green */
+    color: #ffffff !important;
+}
+
+.btn-apple {
+    background-color: #FC3C44 !important; /* Apple Music Red */
+    color: #ffffff !important;
+}
+
+.btn-youtube {
+    background-color: #FF0000 !important; /* YouTube Red */
+    color: #ffffff !important;
+}
+
+.btn-store {
+    background-color: #00ff66 !important; /* Glowing Store Green */
+    color: #0d0c0a !important; /* Dark text for high contrast */
+}
+
+.btn-website {
+    background-color: #d4c3a1 !important; /* OCL Brand Gold */
+    color: #0d0c0a !important; /* Dark text for high contrast */
 }

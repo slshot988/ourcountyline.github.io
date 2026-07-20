@@ -12,6 +12,7 @@ Disallow: /tfbia.html
 Disallow: /wsyof.html
 Disallow: /wwwbt.html
 Disallow: /xedni.html
+Disallow: /links.html
 
 # Sitemap Directive
 Sitemap: https://ourcountyline.com/sitemap.xml
