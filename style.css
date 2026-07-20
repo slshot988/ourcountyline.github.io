@@ -588,3 +588,13 @@ footer {
     transform: translateY(-2px);
     filter: brightness(1.1);
 }
+
+.link-tree-logo {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%; /* Crops the square into a perfect circle */
+    object-fit: cover;  /* Prevents image distortion */
+    margin-bottom: 15px;
+    border: 2px solid rgba(212, 195, 161, 0.4); /* Subtle gold ring */
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.6);
+}
