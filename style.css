@@ -680,21 +680,26 @@ footer {
 }
 
 .btn-youtube {
-    background-color: #050505 !important; /* Deep black background */
-    color: #FF0000 !important; /* YouTube Red text and icon */
-    border: 1px solid rgba(255, 0, 0, 0.5) !important; /* Defines the pill shape */
-    box-shadow: 0px 0px 15px rgba(255, 0, 0, 0.4) !important; /* Base red glow */
-    text-shadow: 0px 0px 5px rgba(255, 0, 0, 0.3) !important; /* Subtle text glow */
+    background-color: #050505 !important; 
+    color: #ffffff !important; /* Pure white text for sharp readability */
+    border: 1px solid rgba(255, 0, 0, 0.5) !important; 
+    box-shadow: 0px 0px 15px rgba(255, 0, 0, 0.4) !important; 
+    text-shadow: none !important; /* Removed text glow to keep white crisp */
+}
+
+.btn-youtube i {
+    color: #FF0000 !important; /* Keeps the YouTube icon brand red */
 }
 
 .btn-youtube:hover {
-    box-shadow: 0px 0px 25px rgba(255, 0, 0, 0.8) !important; /* Intensified glow on hover */
+    box-shadow: 0px 0px 25px rgba(255, 0, 0, 0.8) !important; 
     border: 1px solid #FF0000 !important;
     transform: translateY(-2px);
 }
 
+/* --- Updated Storefront Button --- */
 .btn-store {
-    background-color: #d35400 !important; /* Rustic Copper / Burnt Orange */
+    background-color: #24487a !important; /* Deep Denim Blue */
     color: #ffffff !important; 
 }
 
