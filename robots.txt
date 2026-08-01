@@ -1,5 +1,7 @@
+User-agent: facebookexternalhit
+Allow: /
+
 User-agent: *
 Disallow: /xedni.html
 
-# Sitemap Directive
 Sitemap: https://ourcountyline.com/sitemap.xml
