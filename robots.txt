@@ -1,27 +1,17 @@
 # Allow Social Media & Messaging Crawlers for Link Previews
 User-agent: facebookexternalhit
-Allow: /links.html
-
 User-agent: Twitterbot
-Allow: /links.html
-
 User-agent: LinkedInBot
-Allow: /links.html
-
 User-agent: Discordbot
-Allow: /links.html
-
 User-agent: Applebot
-Allow: /links.html
-
 User-agent: Slackbot
-Allow: /links.html
+Disallow: /xedni.html
+Allow: /
 
+# Block Squeeze and Test Pages for All Other Bots (including Google)
 User-agent: *
 Allow: /index.html
 Allow: /about.html
-
-# Blocked Squeeze and Test Pages
 Disallow: /bwaasd.html
 Disallow: /cmo.html
 Disallow: /dttb.html
