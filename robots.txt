@@ -1,3 +1,22 @@
+# Allow Social Media & Messaging Crawlers for Link Previews
+User-agent: facebookexternalhit
+Allow: /links.html
+
+User-agent: Twitterbot
+Allow: /links.html
+
+User-agent: LinkedInBot
+Allow: /links.html
+
+User-agent: Discordbot
+Allow: /links.html
+
+User-agent: Applebot
+Allow: /links.html
+
+User-agent: Slackbot
+Allow: /links.html
+
 User-agent: *
 Allow: /index.html
 Allow: /about.html
