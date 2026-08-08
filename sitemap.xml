@@ -3,7 +3,7 @@
    
    <!-- Core Homepage -->
    <url>
-      <loc>https://ourcountyline.com/</loc>
+      <loc>https://www.ourcountyline.com/</loc>
       <lastmod>2026-08-07</lastmod>
       <changefreq>weekly</changefreq>
       <priority>1.0</priority>
@@ -11,7 +11,7 @@
 
    <!-- Entity Definition / Knowledge Graph Anchor -->
    <url>
-      <loc>https://ourcountyline.com/about.html</loc>
+      <loc>https://www.ourcountyline.com/about.html</loc>
       <lastmod>2026-08-03</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.9</priority>
