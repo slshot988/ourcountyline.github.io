@@ -458,6 +458,81 @@ footer {
 }
 
 /* ==========================================================================
+   6. MULTI-TAB MUSIC COMPONENT
+   ========================================================================== */
+.music-tabs-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 40px auto;
+    background: transparent;
+}
+
+/* Tab Navigation Header */
+.tabs-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.tab-button {
+    background: rgba(20, 20, 20, 0.8);
+    border: 1px solid #c2a878; 
+    color: #f1f1f1;
+    padding: 10px 20px;
+    font-size: 0.9rem;
+    font-family: 'Georgia', serif; 
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 4px;
+}
+
+.tab-button:hover {
+    background: #c2a878;
+    color: #111;
+}
+
+.tab-button.active {
+    background: #c2a878;
+    color: #111;
+    font-weight: bold;
+    box-shadow: 0 0 10px rgba(194, 168, 120, 0.4);
+}
+
+/* Tab Content Areas */
+.tabs-content-area {
+    border: 1px solid rgba(194, 168, 120, 0.3);
+    border-radius: 8px;
+    background: rgba(10, 10, 10, 0.6);
+    padding: 20px;
+}
+
+.tab-pane {
+    display: none;
+    animation: fadeIn 0.4s ease-in-out;
+}
+
+.tab-pane.active {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(5px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Ensure the existing track-row styling applies seamlessly inside the tab-pane */
+.tab-pane .track-row {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+.tab-pane .track-row:last-child {
+    border-bottom: none;
+}
+
+/* ==========================================================================
    7. INTERACTIVE LINER NOTES SYSTEM OVERLAY (Squeeze Page Standardization)
    ========================================================================== */
 .modal-overlay {
