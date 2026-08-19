@@ -110,7 +110,7 @@ const trackDatabase = {
         spotify: "#",
         apple: "#",
         youtube: "#",
-        linerImage: "images/18SummersCover.png",
+        linerImage: "images/18SummersCover2.jpg",
         linerText: "18 Summers is a celebration of the experience of watching your child grow.  It starts from the moment they join the world.  Time seems endless.  As they grow, the time sure does feel like it is slipping away, but the pride and joy you feel... that is something that truly lasts forever."
     },
     "out-of-range": {
@@ -118,7 +118,7 @@ const trackDatabase = {
         spotify: "#",
         apple: "#",
         youtube: "#",
-        linerImage: "images/OutOfRange.jpg",
+        linerImage: "images/OutOfRangeCover.jpg",
         linerText: "Our range was never meant to be limited by cell phone towers.  Some times you and the one that matters most just need to hop into that Chevy, roll the windows down, and drive until the bars run out."
     },
     "who-we-were-back-then": {
