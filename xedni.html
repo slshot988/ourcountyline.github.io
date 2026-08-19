@@ -140,11 +140,11 @@
             </div>
         </div>
     </div>
-    
+
 <!-- 1. Load the data file -->
     <script src="trackData.js"></script>
 
-    <!-- 2. UI Rendering and Logic -->
+<!-- 2. UI Rendering and Logic -->
     <script>
     document.addEventListener("DOMContentLoaded", () => {
         const tabsHeader = document.getElementById('tabsHeader');
@@ -177,8 +177,19 @@
             tabPane.className = `tab-pane ${isFirstTab ? 'active' : ''}`;
             tabPane.id = tabId;
 
+            let paneContentHTML = '';
+
+            // --- INJECT ALBUM ART (If it exists and is not "#") ---
+            if (tabData.image && tabData.image !== "#") {
+                paneContentHTML += `
+                    <div class="tab-album-art-container">
+                        <img src="${tabData.image}" alt="${tabData.name} Artwork" class="tab-album-cover">
+                    </div>
+                `;
+            }
+
             // Generate the track list for this tab
-            let trackListHTML = '';
+            let trackListHTML = '<div class="tab-tracklist-wrapper">';
             tabData.tracks.forEach((trackKey, index) => {
                 const track = trackDatabase[trackKey];
                 if (!track) return; // Skip if track key has a typo
@@ -206,8 +217,10 @@
                     </div>
                 `;
             });
+            trackListHTML += '</div>';
 
-            tabPane.innerHTML = trackListHTML;
+            // Combine Art and Tracklist
+            tabPane.innerHTML = paneContentHTML + trackListHTML;
             tabsContent.appendChild(tabPane);
             
             isFirstTab = false; // Only the first loop iteration gets the 'active' class

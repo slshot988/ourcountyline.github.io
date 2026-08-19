@@ -126,7 +126,7 @@ const trackDatabase = {
         spotify: "https://open.spotify.com/track/6tZUYBPUB7QdFTLodx6jst",
         apple: "https://music.apple.com/us/song/who-we-were-back-then/6784398123",
         youtube: "https://www.youtube.com/playlist?list=OLAK5uy_n8Ajlgx7LpRz__r7lRaRC2FbbjGL8GLcI",
-        linerImage: "images/WhoWeWereCover.jpg",
+        linerImage: "images/WhoWeWereCover.jpeg",
         linerText: "A nostalgic country song of a love lost to time, but not forgotten. What went wrong? Why did they part? Who they were back then... it just wasn't who they were meant to be."
     },
     
@@ -153,6 +153,7 @@ const trackDatabase = {
 const tabLists = {
     "popular": {
         name: "Popular Releases",
+        image: "#", // Hides the image container entirely
         tracks: [
             "fight-like-we-mean-it",
             "dont-take-the-bait",
@@ -168,6 +169,7 @@ const tabLists = {
     },
     "latest": {
         name: "Latest Music",
+        image: "#", // Hides the image container entirely
         tracks: [
             "fight-like-we-mean-it",
             "18-summers",
@@ -179,6 +181,7 @@ const tabLists = {
     },
     "deluxe": {
         name: "Barbed Wire and a Sunday Dress (Deluxe Edition)",
+        image: "images/DeluxeBarbedWireCover.png", // Displays the album art
         tracks: [
             "our-county-line",
             "what-sets-you-on-fire",
@@ -199,6 +202,7 @@ const tabLists = {
     },
     "upcoming-album": {
         name: "Upcoming Album - TBA",
+        image: "images/TBAAlbumCoverUpscale.png", // Displays the placeholder art
         tracks: [
             "tba",
             "tba",

@@ -795,3 +795,20 @@ footer {
     color: #ffffff !important; /* Pure white text for an active, clickable look */
     border: 1px solid rgba(212, 195, 161, 0.3) !important; 
 }
+
+/* --- Dynamic Tab Album Artwork --- */
+.tab-album-art-container {
+    width: 100%;
+    max-width: 330px; 
+    margin: 0 auto 25px auto; /* Centers the image and gives 25px breathing room below */
+    text-align: center;
+}
+
+.tab-album-cover {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    border-radius: 4px;
+    border: 1px solid rgba(212, 195, 161, 0.2);
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.6);
+}
