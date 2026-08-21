@@ -107,17 +107,17 @@ const trackDatabase = {
     },
     "18-summers": {
         title: "18 Summers",
-        spotify: "#",
-        apple: "#",
-        youtube: "#",
+        spotify: "https://open.spotify.com/track/06oMsUpPH8qCSMzhI2OFIH",
+        apple: "https://music.apple.com/us/song/18-summers/6802900073",
+        youtube: "https://youtu.be/-olfpng0reQ?si=dLuoko06SOBj8Dv5",
         linerImage: "images/18SummersCover2.jpg",
         linerText: "18 Summers is a celebration of the experience of watching your child grow.  It starts from the moment they join the world.  Time seems endless.  As they grow, the time sure does feel like it is slipping away, but the pride and joy you feel... that is something that truly lasts forever."
     },
     "out-of-range": {
         title: "Out of Range",
-        spotify: "#",
-        apple: "#",
-        youtube: "#",
+        spotify: "https://open.spotify.com/track/4x3mNtCIgUIj3ooWarut5Q",
+        apple: "https://music.apple.com/us/song/out-of-range/6802900377",
+        youtube: "https://youtu.be/A2-gsWbcu1w?si=pKf6Wl1yQNtyTBbi",
         linerImage: "images/OutOfRangeCover.jpg",
         linerText: "Our range was never meant to be limited by cell phone towers.  Some times you and the one that matters most just need to hop into that Chevy, roll the windows down, and drive until the bars run out."
     },
