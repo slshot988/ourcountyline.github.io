@@ -3,7 +3,7 @@
 const trackDatabase = {
     "our-county-line": {
         title: "Our County Line",
-        spotify: "https://open.spotify.com/track/6tVW0rYV9Uzyq4GpzvFHUf?si=4c01548192f6413f",
+        spotify: "https://open.spotify.com/track/18wrkIYu1YFx9gMU4yA94I",
         apple: "https://music.apple.com/us/song/our-county-line/6802900069",
         youtube: "https://youtu.be/vCrAoEmcExY?si=vVz6bwEN32zRCbd5",
         linerImage: "images/01_OurCountyLine.jpg",
@@ -11,7 +11,7 @@ const trackDatabase = {
     },
     "what-sets-you-on-fire": {
         title: "What Sets You on Fire",
-        spotify: "https://open.spotify.com/track/1vmjihwY9L5Vw97l7PFNT4?si=579aeba154d14aee",
+        spotify: "https://open.spotify.com/track/6L3D9mU5xEWTCGKtEekxHu",
         apple: "https://music.apple.com/us/song/what-sets-you-on-fire/6802900070",
         youtube: "https://youtu.be/NHxvNlWC66s?si=XQeUGREjCjG2EM08",
         linerImage: "images/02_WhatSetsYouOnFire.jpg",
@@ -19,7 +19,7 @@ const trackDatabase = {
     },
     "barbed-wire-and-a-sunday-dress": {
         title: "Barbed Wire and a Sunday Dress",
-        spotify: "https://open.spotify.com/track/6SsWtL9ZNtp1jEdCPPyHFc?si=705347ee95984625",
+        spotify: "https://open.spotify.com/track/1JTDDEYZFFEdgC1imvyhid",
         apple: "https://music.apple.com/us/song/barbed-wire-and-a-sunday-dress/6802900071",
         youtube: "https://youtu.be/SNdKKAcZ2kk?si=-GfbDhHNoh5tg2K0",
         linerImage: "images/03_BarbedWireandaSundayDress.jpg",
@@ -27,7 +27,7 @@ const trackDatabase = {
     },
     "the-first-bloom-in-april": {
         title: "The First Bloom in April",
-        spotify: "https://open.spotify.com/track/6nBsLVt7BjiY47mwM5Q05H?si=40c4ea6fde704d50",
+        spotify: "https://open.spotify.com/track/5b51knGe7vOg60YmeDVsoq",
         apple: "https://music.apple.com/us/song/the-first-bloom-in-april/6802900074",
         youtube: "https://youtu.be/ef02C0vL4Zc?si=O_sM8xZ20O6V3u5d",
         linerImage: "images/04_TheFirstBloominApril.jpg",
@@ -35,7 +35,7 @@ const trackDatabase = {
     },
     "get-out": {
         title: "Get Out",
-        spotify: "https://open.spotify.com/track/6ckChorSLNyPcDKt85jsek?si=39f89125d20e492a",
+        spotify: "https://open.spotify.com/track/4RLIgNIO4fWJ0pAx8OKaQJ",
         apple: "https://music.apple.com/us/song/get-out/6802900075",
         youtube: "https://youtu.be/fnEMdl9ef-E?si=hfWpQfvCO_tMZq5G",
         linerImage: "images/05_GetOut.jpg",
@@ -43,7 +43,7 @@ const trackDatabase = {
     },
     "piece-of-you": {
         title: "Piece of You",
-        spotify: "https://open.spotify.com/track/6pri282usAJ0jjZQMOKnac?si=5c455e60e2544fbb",
+        spotify: "https://open.spotify.com/track/3Y89ipf3wGZLLuHUfSlUZ2",
         apple: "https://music.apple.com/us/song/piece-of-you/6802900072",
         youtube: "https://youtu.be/nrtHSC6DdCY?si=9UbVsDFda5N6nm30",
         linerImage: "images/06_PieceofYou.jpg",
@@ -51,7 +51,7 @@ const trackDatabase = {
     },
     "we-dont-need-to-run": {
         title: "We Don't Need to Run",
-        spotify: "https://open.spotify.com/track/0N6FHBpIcfexStNFAaQqvF?si=e6e164c4bd1f40d3",
+        spotify: "https://open.spotify.com/track/1CWlMn9FfSSOrmw9IsuWMM",
         apple: "https://music.apple.com/us/song/we-dont-need-to-run/6802900376",
         youtube: "https://youtu.be/soc1kxOda-4?si=V6vBKXVaetRBgUul",
         linerImage: "images/07_WeDontNeedtoRun.jpg",
@@ -59,7 +59,7 @@ const trackDatabase = {
     },
     "cut-me-off": {
         title: "Cut Me Off",
-        spotify: "https://open.spotify.com/track/3XVeEmh2bEC0RXdNxtHkYR?si=4d96d677b90e4d96",
+        spotify: "https://open.spotify.com/track/0yhZoeCXKwVvH8gGJ0ss52",
         apple: "https://music.apple.com/us/song/cut-me-off/6802900378",
         youtube: "https://youtu.be/9VbJQrHXXXQ?si=HEyDvtWdxdT3GOCk",
         linerImage: "images/08_CutMeOff.png",
@@ -67,7 +67,7 @@ const trackDatabase = {
     },
     "dont-take-the-bait": {
         title: "Don't Take the Bait",
-        spotify: "https://open.spotify.com/track/6iaG7Q8gZp2ymztY7LuRcg?si=9676b1339a9f4f6d",
+        spotify: "https://open.spotify.com/track/5yiERceeJjANOWVAUHniO4",
         apple: "https://music.apple.com/us/song/dont-take-the-bait/6802900379",
         youtube: "https://youtu.be/hxlah4u-HWE?si=NxnaGO7ffBHTAWG6",
         linerImage: "images/09_DontTakeTheBait.jpg",
@@ -75,7 +75,7 @@ const trackDatabase = {
     },
     "whered-them-brown-eyes-go": {
         title: "Where'd Them Brown Eyes Go",
-        spotify: "https://open.spotify.com/track/5aiPrVdlWH3xDJwsX2DVdT?si=c3a868ae7b2b4c9b",
+        spotify: "https://open.spotify.com/track/7Ig84IivsvHDDNLG5QZoOy",
         apple: "https://music.apple.com/us/song/whered-them-brown-eyes-go/6802900381",
         youtube: "https://youtu.be/kXRmAzQXp9o?si=iQpNhWafwwOKiidU",
         linerImage: "images/10_WheredThemBrownEyesGo.jpg",
@@ -83,7 +83,7 @@ const trackDatabase = {
     },
     "not-written-yet": {
         title: "Not Written Yet",
-        spotify: "https://open.spotify.com/track/7zlddXxb8Rou15lpDp7iLa?si=bff529f834ec470f",
+        spotify: "https://open.spotify.com/track/0WIHAgA29jbU474gmF38DB",
         apple: "https://music.apple.com/us/song/not-written-yet/6802900382",
         youtube: "https://youtu.be/D9mRC5P4pc4?si=fmPyDvqs9FPZdDdK",
         linerImage: "images/11_NotWrittenYet.jpg",
@@ -91,7 +91,7 @@ const trackDatabase = {
     },
     "your-amazing-grace": {
         title: "Your Amazing Grace",
-        spotify: "https://open.spotify.com/track/7MaoqJJo8lUSFC4o5iYi7P?si=01acb8feae28496a",
+        spotify: "https://open.spotify.com/track/1bDkcse85JaOuftjhpVhkp",
         apple: "https://music.apple.com/us/song/your-amazing-grace/6771051013",
         youtube: "https://youtu.be/emwh1czSH-k?si=sm1yEmDvULrO9XtO",
         linerImage: "images/12_YourAmazingGrace.png",
@@ -123,7 +123,7 @@ const trackDatabase = {
     },
     "who-we-were-back-then": {
         title: "Who We Were Back Then",
-        spotify: "https://open.spotify.com/track/6tZUYBPUB7QdFTLodx6jst",
+        spotify: "https://open.spotify.com/track/3uGH38vIakRzyEKUSMMCpX",
         apple: "https://music.apple.com/us/song/who-we-were-back-then/6802900380",
         youtube: "https://www.youtube.com/playlist?list=OLAK5uy_n8Ajlgx7LpRz__r7lRaRC2FbbjGL8GLcI",
         linerImage: "images/WhoWeWereCover.jpeg",
