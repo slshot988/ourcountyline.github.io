@@ -136,7 +136,7 @@ const trackDatabase = {
         spotify: "#",
         apple: "#",
         youtube: "#",
-        linerImage: "images/GoAheadTile.jpeg",
+        linerImage: "images/GALeaveCover.jpeg",
         linerText: "Details coming soon..."
     },
     "tba": {
