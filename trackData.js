@@ -99,9 +99,9 @@ const trackDatabase = {
     },
     "fight-like-we-mean-it": {
         title: "Fight (Like We Mean It)",
-        spotify: "https://open.spotify.com/track/1Plcvi1XkW89IdHQO3cCwy",
-        apple: "https://music.apple.com/us/song/your-amazing-grace/6802900383",
-        youtube: "https://www.youtube.com/watch?v=moLUPlm4nko",
+        spotify: "https://open.spotify.com/track/0OxIZKGoeaVtRJe6sr6DmZ",
+        apple: "https://music.apple.com/us/song/fight-like-we-mean-it/6804794883",
+        youtube: "https://www.youtube.com/watch?v=A_3IhfiL5n8&list=OLAK5uy_midjHgJsPNrUfLRTMwfL-lKgFNgLPwkTA&index=2",
         linerImage: "images/FightCoverjpg.jpg",
         linerText: "So many fights start out as just a little thing.  Somehow that little thing is like a fuse that can set a whole bomb off.  We know that feeling all too well.  Here on Our County Line, we fight like we mean it.  But we make up like we mean it too."
     },
@@ -133,11 +133,11 @@ const trackDatabase = {
     // Placeholder & Upcoming Tracks
     "go-ahead-and-leave": {
         title: "Go Ahead and Leave - September 4th, 2026",
-        spotify: "#",
-        apple: "#",
-        youtube: "#",
+        spotify: "https://open.spotify.com/track/20PbWiTHUiWrr5s8vJLsxm",
+        apple: "https://music.apple.com/us/song/go-ahead-and-leave/6804794881",
+        youtube: "https://www.youtube.com/watch?v=0dI8MzQ7HN4&list=OLAK5uy_midjHgJsPNrUfLRTMwfL-lKgFNgLPwkTA",
         linerImage: "images/GALeaveCover.jpeg",
-        linerText: "Details coming soon..."
+        linerText: "There comes a moment.  When the fight goes quiet.  The emotion pours out.  And the sound of your heart pounding is the loudest thing you've ever heard.  A heavy moment in time that can change everything.  Go Ahead and Leave.  Or realize what it is all really about."
     },
     "tba": {
         title: "TBA",
@@ -158,19 +158,20 @@ const tabLists = {
             "fight-like-we-mean-it",
             "dont-take-the-bait",
             "barbed-wire-and-a-sunday-dress",
+            "go-ahead-and-leave",
             "piece-of-you",
             "who-we-were-back-then",
             "what-sets-you-on-fire",
             "cut-me-off",
             "our-county-line",
             "the-first-bloom-in-april",
-            "not-written-yet"
         ]
     },
     "latest": {
         name: "Latest Music",
         image: "#", // Hides the image container entirely
         tracks: [
+            "go-ahead-and-leave",
             "fight-like-we-mean-it",
             "18-summers",
             "out-of-range",
