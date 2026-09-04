@@ -132,7 +132,7 @@ const trackDatabase = {
     
     // Placeholder & Upcoming Tracks
     "go-ahead-and-leave": {
-        title: "Go Ahead and Leave - September 4th, 2026",
+        title: "Go Ahead and Leave",
         spotify: "https://open.spotify.com/track/20PbWiTHUiWrr5s8vJLsxm",
         apple: "https://music.apple.com/us/song/go-ahead-and-leave/6804794881",
         youtube: "https://www.youtube.com/watch?v=0dI8MzQ7HN4&list=OLAK5uy_midjHgJsPNrUfLRTMwfL-lKgFNgLPwkTA",
