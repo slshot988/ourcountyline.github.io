@@ -139,6 +139,14 @@ const trackDatabase = {
         linerImage: "images/GALeaveCover.jpeg",
         linerText: "There comes a moment.  When the fight goes quiet.  The emotion pours out.  And the sound of your heart pounding is the loudest thing you've ever heard.  A heavy moment in time that can change everything.  Go Ahead and Leave.  Or realize what it is all really about."
     },
+    "table-for-two": {
+        title: "Table for Two (Six)",
+        spotify: "#",
+        apple: "#",
+        youtube: "#",
+        linerImage: "images/tablefortwononspot.jpeg",
+        linerText: "Every parent knows the feeling: the keys are in your hand, a quiet dinner date is on the calendar, and you’re dreaming of a high-dollar steak and an uninterrupted conversation. But real life doesn’t care about reservations...."
+    },
     "tba": {
         title: "TBA",
         spotify: "#",
@@ -214,7 +222,7 @@ const tabLists = {
             "tba",
             "fight-like-we-mean-it",
             "tba",
-            "tba",
+            "table-for-two",
             "tba",
             "tba"
         ]
