@@ -141,9 +141,9 @@ const trackDatabase = {
     },
     "table-for-two": {
         title: "Table for Two (Six)",
-        spotify: "#",
-        apple: "#",
-        youtube: "#",
+        spotify: "https://open.spotify.com/track/50MNW5q3qc47a8PlfJbbWc",
+        apple: "https://music.apple.com/us/song/table-for-two-six/6813285046",
+        youtube: "https://www.youtube.com/watch?v=1TNzeCmR0bk&list=RD1TNzeCmR0bk",
         linerImage: "images/tablefortwononspot.jpeg",
         linerText: "Every parent knows the feeling: the keys are in your hand, a quiet dinner date is on the calendar, and you’re dreaming of a high-dollar steak and an uninterrupted conversation. But real life doesn’t care about reservations...."
     },
