@@ -165,12 +165,12 @@ const tabLists = {
         tracks: [
             "fight-like-we-mean-it",
             "dont-take-the-bait",
+            "table-for-two",
             "barbed-wire-and-a-sunday-dress",
             "go-ahead-and-leave",
             "piece-of-you",
             "who-we-were-back-then",
             "what-sets-you-on-fire",
-            "cut-me-off",
             "our-county-line",
             "the-first-bloom-in-april",
         ]
@@ -179,13 +179,13 @@ const tabLists = {
         name: "Latest Music",
         image: "#", // Hides the image container entirely
         tracks: [
+            "table-for-two",
             "go-ahead-and-leave",
             "fight-like-we-mean-it",
             "18-summers",
             "out-of-range",
             "who-we-were-back-then",
-            "cut-me-off",
-            "get-out"
+            "cut-me-off"
         ]
     },
     "deluxe": {
