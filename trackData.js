@@ -147,6 +147,14 @@ const trackDatabase = {
         linerImage: "images/tablefortwononspot.jpeg",
         linerText: "Every parent knows the feeling: the keys are in your hand, a quiet dinner date is on the calendar, and you’re dreaming of a high-dollar steak and an uninterrupted conversation. But real life doesn’t care about reservations...."
     },
+        "rearview": {
+        title: "Rearview",
+        spotify: "#",
+        apple: "#",
+        youtube: "#",
+        linerImage: "images/RearviewCloser3000.jpg", // Generic placeholder
+        linerText: "You said that it's you.  And that it ain't mean.  So now I'm right here just watching you leave... There's just one thing, and it's never gonna change.  I never could mind watching you walk away.  'Cause I like that rearview."
+    },
     "tba": {
         title: "TBA",
         spotify: "#",
@@ -214,7 +222,7 @@ const tabLists = {
         image: "images/TBAAlbumCoverUpscale.png", // Displays the placeholder art
         tracks: [
             "tba",
-            "tba",
+            "rearview",
             "go-ahead-and-leave",
             "tba",
             "tba",
