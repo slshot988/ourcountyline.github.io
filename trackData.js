@@ -149,9 +149,9 @@ const trackDatabase = {
     },
         "rearview": {
         title: "Rearview",
-        spotify: "#",
-        apple: "#",
-        youtube: "#",
+        spotify: "https://open.spotify.com/track/5ux0A5bP1M1jAOKEcpX4Ph",
+        apple: "https://music.apple.com/us/song/rearview/6815695870",
+        youtube: "https://www.youtube.com/watch?v=_uWEe5RQGmo",
         linerImage: "images/RearviewCloser3000.jpg", // Generic placeholder
         linerText: "You said that it's you.  And that it ain't mean.  So now I'm right here just watching you leave... There's just one thing, and it's never gonna change.  I never could mind watching you walk away.  'Cause I like that rearview."
     },
@@ -171,29 +171,28 @@ const tabLists = {
         name: "Popular Releases",
         image: "#", // Hides the image container entirely
         tracks: [
+            "rearview",
             "fight-like-we-mean-it",
             "dont-take-the-bait",
-            "table-for-two",
             "barbed-wire-and-a-sunday-dress",
             "go-ahead-and-leave",
             "piece-of-you",
             "who-we-were-back-then",
             "what-sets-you-on-fire",
-            "our-county-line",
-            "the-first-bloom-in-april",
+            "our-county-line"
         ]
     },
     "latest": {
         name: "Latest Music",
         image: "#", // Hides the image container entirely
         tracks: [
+            "rearview",
             "table-for-two",
             "go-ahead-and-leave",
             "fight-like-we-mean-it",
             "18-summers",
             "out-of-range",
-            "who-we-were-back-then",
-            "cut-me-off"
+            "who-we-were-back-then"
         ]
     },
     "deluxe": {
