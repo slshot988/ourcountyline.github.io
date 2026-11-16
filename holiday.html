@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Holiday Playlist Submissions | Our County Line</title>
+    <meta name="description" content="Submit your song for consideration on the Our County Line Holiday Playlists on Spotify and YouTube.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, follow">
+
+    <!-- Open Graph / Facebook Meta Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.ourcountyline.com/holiday.html">
+    <meta property="og:title" content="Holiday Playlist Submissions | Our County Line">
+    <meta property="og:description" content="Submit your song for consideration on the Our County Line Holiday Playlists on Spotify and YouTube.">
+    <meta property="og:image" content="https://www.ourcountyline.com/images/BarBandProfile.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Holiday Playlist Submissions | Our County Line">
+    <meta name="twitter:description" content="Submit your song for consideration on the Our County Line Holiday Playlists on Spotify and YouTube.">
+    <meta name="twitter:image" content="https://www.ourcountyline.com/images/BarBandProfile.png">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WLW4XP09JZ"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-WLW4XP09JZ');
+    </script>
+
+    <!-- FACEBOOK PIXEL -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '1265745674887608');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1265745674887608&ev=PageView&noscript=1"/>
+    </noscript>
+
+    <!-- GLOBAL CSS & FONTS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- FAVICON -->
+    <link rel="icon" href="images/ocl_logo_transparent.png" type="image/png">
+    <link rel="apple-touch-icon" href="images/ocl_logo_transparent.png">
+
+    <!-- FORM PAGE SPECIFIC STYLES -->
+    <style>
+        /* Zero-specificity fallback so style.css always wins if it sets these */
+        :where(body.link-tree-page) {
+            margin: 0;
+            background: #1a1612;
+            color: #ffffff;
+            font-family: 'Georgia', serif;
+        }
+
+        .link-tree-container {
+            width: 100%;
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            box-sizing: border-box;
+        }
+
+        .link-tree-header {
+            margin-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .link-tree-logo {
+            width: 150px;
+            height: auto;
+            border-radius: 50%;
+            margin-bottom: 15px;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+            border: 1px solid rgba(212, 195, 161, 0.2);
+        }
+
+        .link-tree-title {
+            font-size: 1.8rem;
+            color: #d4c3a1;
+            letter-spacing: 2px;
+            margin: 0;
+        }
+
+        .link-tree-handle {
+            font-size: 0.9rem;
+            color: #ffcc99;
+            opacity: 0.7;
+            margin-top: 5px;
+            letter-spacing: 1px;
+        }
+
+        .form-heading {
+            font-size: 1.2rem;
+            color: #ffcc99;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin: 20px 0 12px;
+            text-align: center;
+        }
+
+        .form-intro {
+            font-family: 'Georgia', serif;
+            font-size: 1rem;
+            line-height: 1.6;
+            color: #ffffff;
+            opacity: 0.9;
+            text-align: center;
+            margin: 0 0 28px;
+        }
+
+        /* FORM */
+        #holiday-form {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .field {
+            width: 100%;
+            margin-bottom: 18px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .field label {
+            font-family: 'Georgia', serif;
+            font-size: 0.85rem;
+            letter-spacing: 1px;
+            color: #d4c3a1;
+            margin: 0 0 8px 20px;
+            text-transform: uppercase;
+        }
+
+        .field label i {
+            margin-right: 8px;
+            font-size: 1rem;
+        }
+
+        .field input,
+        .field textarea {
+            width: 100%;
+            padding: 16px 22px;
+            border-radius: 50px;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(212, 195, 161, 0.3);
+            color: #ffffff;
+            font-family: 'Georgia', serif;
+            font-size: 1.05rem;
+            letter-spacing: 0.5px;
+            box-sizing: border-box;
+            transition: all 0.3s ease;
+            outline: none;
+        }
+
+        .field textarea {
+            border-radius: 26px;
+            min-height: 130px;
+            resize: vertical;
+            line-height: 1.5;
+        }
+
+        .field input::placeholder,
+        .field textarea::placeholder {
+            color: rgba(255, 255, 255, 0.35);
+        }
+
+        .field input:hover,
+        .field textarea:hover {
+            background: rgba(255, 255, 255, 0.08);
+        }
+
+        .field input:focus,
+        .field textarea:focus {
+            background: rgba(255, 255, 255, 0.1);
+            border-color: #ffcc99;
+            box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.3);
+        }
+
+        .field.has-error input,
+        .field.has-error textarea {
+            border-color: #ff6b6b;
+        }
+
+        .field-error {
+            display: none;
+            font-size: 0.8rem;
+            color: #ff8f8f;
+            margin: 6px 0 0 20px;
+            letter-spacing: 0.5px;
+        }
+
+        .field.has-error .field-error {
+            display: block;
+        }
+
+        /* Submit pill matches .link-btn */
+        .submit-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            padding: 16px 20px;
+            margin-top: 8px;
+            border-radius: 50px;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(212, 195, 161, 0.3);
+            color: #ffffff;
+            font-family: 'Georgia', serif;
+            font-size: 1.1rem;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            position: relative;
+            box-sizing: border-box;
+            cursor: pointer;
+        }
+
+        .submit-btn i {
+            position: absolute;
+            left: 24px;
+            font-size: 1.3rem;
+        }
+
+        .submit-btn:not(:disabled):hover {
+            background: rgba(255, 255, 255, 0.1);
+            border-color: #00ff66;
+            color: #00ff66;
+            transform: translateY(-3px);
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .submit-btn:disabled {
+            opacity: 0.4;
+            cursor: not-allowed;
+        }
+
+        .form-note {
+            font-size: 0.8rem;
+            color: #ffcc99;
+            opacity: 0.6;
+            text-align: center;
+            margin: 14px 0 0;
+            letter-spacing: 0.5px;
+        }
+
+        /* Status messages */
+        .form-status {
+            display: none;
+            width: 100%;
+            padding: 16px 22px;
+            margin-top: 16px;
+            border-radius: 26px;
+            font-size: 0.95rem;
+            line-height: 1.5;
+            text-align: center;
+            box-sizing: border-box;
+        }
+
+        .form-status.error {
+            display: block;
+            background: rgba(255, 107, 107, 0.08);
+            border: 1px solid rgba(255, 107, 107, 0.5);
+            color: #ff8f8f;
+        }
+
+        /* Success panel */
+        .success-panel {
+            display: none;
+            width: 100%;
+            text-align: center;
+            padding: 30px 20px;
+            border-radius: 26px;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(212, 195, 161, 0.3);
+            box-sizing: border-box;
+        }
+
+        .success-panel i {
+            font-size: 2.2rem;
+            color: #00ff66;
+            margin-bottom: 14px;
+        }
+
+        .success-panel h2 {
+            color: #d4c3a1;
+            letter-spacing: 2px;
+            font-size: 1.4rem;
+            margin: 0 0 10px;
+        }
+
+        .success-panel p {
+            margin: 0;
+            line-height: 1.6;
+            opacity: 0.9;
+        }
+
+        /* Hidden spam trap */
+        .hp { position: absolute; left: -9999px; height: 0; width: 0; opacity: 0; }
+
+        footer {
+            margin-top: 40px;
+            border-top: none;
+        }
+
+        @media (max-width: 480px) {
+            .link-tree-title { font-size: 1.5rem; }
+        }
+    </style>
+</head>
+<body class="link-tree-page">
+
+    <div class="link-tree-container">
+
+        <!-- HEADER -->
+        <div class="link-tree-header">
+            <img src="images/BandLargeProfile.jpeg" alt="Our County Line Profile" class="link-tree-logo">
+            <h1 class="link-tree-title">Our County Line</h1>
+            <div class="link-tree-handle">@ourcountyline</div>
+        </div>
+
+        <h2 class="form-heading">Holiday Playlist Submissions</h2>
+        <p class="form-intro">We're excited to ring in the holidays with our fellow modern creators. For consideration of being added to our Holiday Playlists on Spotify and YouTube please send us information on your songs!</p>
+
+        <!-- THE FORM -->
+        <form id="holiday-form" novalidate>
+
+            <!-- Spam trap: real visitors never see or fill this -->
+            <input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+            <div class="field">
+                <label for="creator-name"><i class="fas fa-user"></i>Creator Name</label>
+                <input type="text" id="creator-name" name="Creator Name" placeholder="Your name" autocomplete="name" required>
+                <div class="field-error">Please enter your name.</div>
+            </div>
+
+            <div class="field">
+                <label for="creator-email"><i class="fas fa-envelope"></i>Creator E-mail</label>
+                <input type="email" id="creator-email" name="Creator E-mail" placeholder="you@example.com" autocomplete="email" required>
+                <div class="field-error">Please enter a valid e-mail address.</div>
+            </div>
+
+            <div class="field">
+                <label for="persona"><i class="fas fa-guitar"></i>Persona / Group Name</label>
+                <input type="text" id="persona" name="Persona / Group Name" placeholder="Artist, band, or persona name" required>
+                <div class="field-error">Please enter your persona or group name.</div>
+            </div>
+
+            <div class="field">
+                <label for="spotify-link"><i class="fab fa-spotify"></i>Spotify Link to Song</label>
+                <input type="url" id="spotify-link" name="Spotify Link" placeholder="https://open.spotify.com/track/..." required>
+                <div class="field-error">Please enter a valid Spotify link.</div>
+            </div>
+
+            <div class="field">
+                <label for="youtube-link"><i class="fab fa-youtube"></i>YouTube Link to Song</label>
+                <input type="url" id="youtube-link" name="YouTube Link" placeholder="https://www.youtube.com/watch?v=..." required>
+                <div class="field-error">Please enter a valid YouTube link.</div>
+            </div>
+
+            <div class="field">
+                <label for="comments"><i class="fas fa-comment-dots"></i>Comments</label>
+                <textarea id="comments" name="Comments" placeholder="Tell us about the song..." required></textarea>
+                <div class="field-error">Please add a comment.</div>
+            </div>
+
+            <!-- FormSubmit options -->
+            <input type="hidden" name="_subject" value="New Holiday Playlist Submission">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_captcha" value="false">
+
+            <button type="submit" id="submit-btn" class="submit-btn" disabled>
+                <i class="fas fa-paper-plane"></i> Submit Your Song
+            </button>
+
+            <div id="form-status" class="form-status" role="alert"></div>
+            <p class="form-note">All fields are required.</p>
+        </form>
+
+        <!-- SUCCESS STATE -->
+        <div id="success-panel" class="success-panel" role="status">
+            <i class="fas fa-circle-check"></i>
+            <h2>Thank You!</h2>
+            <p>Your song has been submitted for consideration. Happy holidays from all of us at Our County Line.</p>
+        </div>
+
+    </div>
+
+    <footer>
+        <p class="copyright-text">Our County Line &copy; 2026 County Heritage Records</p>
+    </footer>
+
+    <script>
+    (function () {
+        var ENDPOINT = 'https://formsubmit.co/ajax/business@ourcountyline.com';
+
+        var form = document.getElementById('holiday-form');
+        var btn = document.getElementById('submit-btn');
+        var statusBox = document.getElementById('form-status');
+        var successPanel = document.getElementById('success-panel');
+
+        var fields = {
+            name: document.getElementById('creator-name'),
+            email: document.getElementById('creator-email'),
+            persona: document.getElementById('persona'),
+            spotify: document.getElementById('spotify-link'),
+            youtube: document.getElementById('youtube-link'),
+            comments: document.getElementById('comments')
+        };
+
+        var emailRe = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
+
+        function hostOf(value) {
+            try {
+                var u = new URL(value.trim());
+                if (u.protocol !== 'https:' && u.protocol !== 'http:') return '';
+                return u.hostname.toLowerCase().replace(/^www\./, '');
+            } catch (e) { return ''; }
+        }
+
+        var validators = {
+            name: function (v) { return v.trim().length > 0; },
+            email: function (v) { return emailRe.test(v.trim()); },
+            persona: function (v) { return v.trim().length > 0; },
+            spotify: function (v) {
+                var h = hostOf(v);
+                return h === 'open.spotify.com' || h === 'spotify.com' || h === 'spotify.link' || h === 'spotify.app.link';
+            },
+            youtube: function (v) {
+                var h = hostOf(v);
+                return h === 'youtube.com' || h === 'm.youtube.com' || h === 'music.youtube.com' || h === 'youtu.be';
+            },
+            comments: function (v) { return v.trim().length > 0; }
+        };
+
+        function check(key, showError) {
+            var el = fields[key];
+            var ok = validators[key](el.value);
+            if (showError) {
+                el.closest('.field').classList.toggle('has-error', !ok);
+            }
+            return ok;
+        }
+
+        function allValid() {
+            var ok = true;
+            Object.keys(fields).forEach(function (k) {
+                if (!validators[k](fields[k].value)) ok = false;
+            });
+            return ok;
+        }
+
+        function refreshButton() {
+            btn.disabled = !allValid();
+        }
+
+        Object.keys(fields).forEach(function (k) {
+            var el = fields[k];
+            el.addEventListener('input', function () {
+                // Clear the error as soon as the field becomes valid
+                if (el.closest('.field').classList.contains('has-error')) check(k, true);
+                refreshButton();
+            });
+            el.addEventListener('blur', function () {
+                if (el.value.length) check(k, true);
+            });
+        });
+
+        form.addEventListener('submit', function (e) {
+            e.preventDefault();
+            statusBox.className = 'form-status';
+            statusBox.textContent = '';
+
+            var ok = true;
+            Object.keys(fields).forEach(function (k) { if (!check(k, true)) ok = false; });
+            if (!ok) return;
+
+            // Spam trap filled in = silently pretend success
+            if (form.elements['_honey'].value) {
+                form.style.display = 'none';
+                successPanel.style.display = 'block';
+                return;
+            }
+
+            btn.disabled = true;
+            var originalLabel = btn.innerHTML;
+            btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+
+            var data = new FormData(form);
+
+            fetch(ENDPOINT, {
+                method: 'POST',
+                headers: { 'Accept': 'application/json' },
+                body: data
+            })
+            .then(function (res) {
+                return res.json().then(function (json) { return { ok: res.ok, json: json }; });
+            })
+            .then(function (r) {
+                if (!r.ok || (r.json && (r.json.success === 'false' || r.json.success === false))) {
+                    throw new Error((r.json && r.json.message) || 'Submission failed');
+                }
+                try {
+                    fbq('track', 'Lead', { content_name: 'Holiday-Playlist-Submission' });
+                    gtag('event', 'form_submit', { event_category: 'engagement', event_label: 'Holiday-Playlist-Submission' });
+                } catch (err) {}
+                form.style.display = 'none';
+                successPanel.style.display = 'block';
+                successPanel.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            })
+            .catch(function () {
+                statusBox.className = 'form-status error';
+                statusBox.textContent = "Something went wrong sending your submission. Please try again, or e-mail business@ourcountyline.com directly.";
+                btn.innerHTML = originalLabel;
+                refreshButton();
+            });
+        });
+
+        refreshButton();
+    })();
+    </script>
+
+</body>
+</html>
