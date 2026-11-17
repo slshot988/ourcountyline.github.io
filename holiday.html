@@ -94,6 +94,22 @@
             border: 1px solid rgba(212, 195, 161, 0.2);
         }
 
+        .link-tree-logo-link {
+            display: inline-block;
+            line-height: 0;
+            border-radius: 50%;
+        }
+
+        .link-tree-logo-link .link-tree-logo {
+            transition: all 0.3s ease;
+        }
+
+        .link-tree-logo-link:hover .link-tree-logo {
+            border-color: #ffcc99;
+            transform: translateY(-3px);
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4);
+        }
+
         .link-tree-title {
             font-size: 1.8rem;
             color: #d4c3a1;
@@ -211,6 +227,15 @@
 
         .field.has-error .field-error {
             display: block;
+        }
+
+        .link-hint {
+            font-size: 0.85rem;
+            color: #ffcc99;
+            opacity: 0.8;
+            text-align: center;
+            margin: 4px 0 16px;
+            letter-spacing: 0.5px;
         }
 
         /* Submit pill matches .link-btn */
@@ -332,7 +357,9 @@
 
         <!-- HEADER -->
         <div class="link-tree-header">
-            <img src="images/BandLargeProfile.jpeg" alt="Our County Line Profile" class="link-tree-logo">
+            <a href="https://www.ourcountyline.com" class="link-tree-logo-link" aria-label="Go to ourcountyline.com" onclick="fbq('track', 'ViewContent', {content_name: 'Holiday-Profile-Photo'}); gtag('event', 'link_click', {event_category: 'engagement', event_label: 'Holiday-Profile-Photo', platform: 'Website'});">
+                <img src="images/BandLargeProfile.jpeg" alt="Our County Line Profile" class="link-tree-logo">
+            </a>
             <h1 class="link-tree-title">Our County Line</h1>
             <div class="link-tree-handle">@ourcountyline</div>
         </div>
@@ -365,15 +392,27 @@
             </div>
 
             <div class="field">
+                <label for="song-name"><i class="fas fa-music"></i>Song Name</label>
+                <input type="text" id="song-name" name="Song Name" placeholder="Title of your song" required>
+                <div class="field-error">Please enter the song name.</div>
+            </div>
+
+            <p class="link-hint">Provide at least one link: Spotify, YouTube, or both.</p>
+
+            <div class="field">
                 <label for="spotify-link"><i class="fab fa-spotify"></i>Spotify Link to Song</label>
-                <input type="url" id="spotify-link" name="Spotify Link" placeholder="https://open.spotify.com/track/..." required>
+                <input type="url" id="spotify-link" name="Spotify Link" placeholder="https://open.spotify.com/track/...">
                 <div class="field-error">Please enter a valid Spotify link.</div>
             </div>
 
             <div class="field">
                 <label for="youtube-link"><i class="fab fa-youtube"></i>YouTube Link to Song</label>
-                <input type="url" id="youtube-link" name="YouTube Link" placeholder="https://www.youtube.com/watch?v=..." required>
+                <input type="url" id="youtube-link" name="YouTube Link" placeholder="https://www.youtube.com/watch?v=...">
                 <div class="field-error">Please enter a valid YouTube link.</div>
+            </div>
+
+            <div id="link-group-error" class="field" style="margin-top:-6px;">
+                <div class="field-error">Please add a Spotify link or a YouTube link (at least one is required).</div>
             </div>
 
             <div class="field">
@@ -392,7 +431,7 @@
             </button>
 
             <div id="form-status" class="form-status" role="alert"></div>
-            <p class="form-note">All fields are required.</p>
+            <p class="form-note">All fields are required, except you only need one of the Spotify or YouTube links.</p>
         </form>
 
         <!-- SUCCESS STATE -->
@@ -421,6 +460,7 @@
             name: document.getElementById('creator-name'),
             email: document.getElementById('creator-email'),
             persona: document.getElementById('persona'),
+            songName: document.getElementById('song-name'),
             spotify: document.getElementById('spotify-link'),
             youtube: document.getElementById('youtube-link'),
             comments: document.getElementById('comments')
@@ -440,11 +480,15 @@
             name: function (v) { return v.trim().length > 0; },
             email: function (v) { return emailRe.test(v.trim()); },
             persona: function (v) { return v.trim().length > 0; },
+            songName: function (v) { return v.trim().length > 0; },
+            // Optional individually: blank is OK, but if filled it must be a valid link
             spotify: function (v) {
+                if (!v.trim()) return true;
                 var h = hostOf(v);
                 return h === 'open.spotify.com' || h === 'spotify.com' || h === 'spotify.link' || h === 'spotify.app.link';
             },
             youtube: function (v) {
+                if (!v.trim()) return true;
                 var h = hostOf(v);
                 return h === 'youtube.com' || h === 'm.youtube.com' || h === 'music.youtube.com' || h === 'youtu.be';
             },
@@ -460,12 +504,24 @@
             return ok;
         }
 
+        var groupError = document.getElementById('link-group-error');
+
+        function hasAtLeastOneLink() {
+            return fields.spotify.value.trim() !== '' || fields.youtube.value.trim() !== '';
+        }
+
+        function checkLinkGroup(showError) {
+            var ok = hasAtLeastOneLink();
+            if (showError) groupError.classList.toggle('has-error', !ok);
+            return ok;
+        }
+
         function allValid() {
             var ok = true;
             Object.keys(fields).forEach(function (k) {
                 if (!validators[k](fields[k].value)) ok = false;
             });
-            return ok;
+            return ok && hasAtLeastOneLink();
         }
 
         function refreshButton() {
@@ -477,10 +533,16 @@
             el.addEventListener('input', function () {
                 // Clear the error as soon as the field becomes valid
                 if (el.closest('.field').classList.contains('has-error')) check(k, true);
+                if (groupError.classList.contains('has-error')) checkLinkGroup(true);
                 refreshButton();
             });
             el.addEventListener('blur', function () {
                 if (el.value.length) check(k, true);
+                // Once the person has left both link fields empty, remind them
+                if ((k === 'spotify' || k === 'youtube') && document.activeElement !== fields.spotify && document.activeElement !== fields.youtube) {
+                    if (!hasAtLeastOneLink() && (fields.spotify.dataset.touched || fields.youtube.dataset.touched)) checkLinkGroup(true);
+                }
+                if (k === 'spotify' || k === 'youtube') el.dataset.touched = '1';
             });
         });
 
@@ -491,6 +553,7 @@
 
             var ok = true;
             Object.keys(fields).forEach(function (k) { if (!check(k, true)) ok = false; });
+            if (!checkLinkGroup(true)) ok = false;
             if (!ok) return;
 
             // Spam trap filled in = silently pretend success
