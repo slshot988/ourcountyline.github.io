@@ -157,16 +157,16 @@ const trackDatabase = {
     },
         "howdowe": {
         title: "How Do We Come Back From This",
-        spotify: "#",
-        apple: "#",
-        youtube: "#",
-        linerImage: "images/HowDoWe.png",
+        spotify: "https://open.spotify.com/track/0G3LsDP28DrNcJ4i2J1jI7",
+        apple: "https://music.apple.com/us/song/how-do-we-come-back-from-this/6831826136",
+        youtube: "https://www.youtube.com/watch?v=ttIdSw-wDhU",
+        linerImage: "images/HowDoWeFullArt.jpg",
         linerText: "Standing in the ruins - but not letting the past ruin the future.  Sometimes it's a choice.  Sometimes it's a voice.  How Do We Come Back From This is about picking through those ruins to find hope in the future."
     },
         "wetstone": {
         title: "Wet Stone",
-        spotify: "#",
-        apple: "#",
+        spotify: "https://open.spotify.com/track/6Ll9HyjRfxj5qDHjUpu2of",
+        apple: "https://music.apple.com/us/song/wet-stone/6831826137",
         youtube: "#",
         linerImage: "images/WetStone.jpeg",
         linerText: "Honoring both our present and our heritage in true Highlands to Heartland Fashion.  Inspired by the real world Wet Stone Creek in Ohio, this tells the story of the rock that once stood on top of the mountain, but time has ground to dust.  The realities of life, but the journey that makes it all worth while."
