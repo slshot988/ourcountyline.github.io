@@ -187,6 +187,7 @@ const tabLists = {
         name: "Popular Releases",
         image: "#", // Hides the image container entirely
         tracks: [
+            "howdowe",
             "rearview",
             "fight-like-we-mean-it",
             "dont-take-the-bait",
@@ -195,13 +196,15 @@ const tabLists = {
             "piece-of-you",
             "who-we-were-back-then",
             "what-sets-you-on-fire",
-            "our-county-line"
+            "wetstone"
         ]
     },
     "latest": {
         name: "Latest Music",
         image: "#", // Hides the image container entirely
         tracks: [
+            "howdowe",
+            "wetstone",
             "rearview",
             "table-for-two",
             "go-ahead-and-leave",
